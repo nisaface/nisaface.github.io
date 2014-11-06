@@ -8,10 +8,7 @@
 
 * run command `bundle exec jekyll serve` to start jekyll serving files
 * visit http://0.0.0.0:4000 to see the site running locally
-* press `ctrl-c` to stop
 
 ## Read More
 
 [Github's Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
-[Jekyll Docs](http://jekyllrb.com/docs/home/)
-[Get Started With GitHub Pages (Plus Bonus Jekyll)](http://24ways.org/2013/get-started-with-github-pages/)
