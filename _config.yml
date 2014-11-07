@@ -1,0 +1,12 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+title: A Crisis of Enclosure
+description: ruminations on the nondescript catastrophe
+
+# Same as the title etc for your site but can instead be
+# called by using 'site.owner.name' and so on
+owner:
+  name: Richard Nisa
+
+exclude: [Gemfile, Gemfile.lock, README.md]
+permalink: /:categories/:title
