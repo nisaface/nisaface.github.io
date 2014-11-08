@@ -9,4 +9,6 @@ owner:
   name: Richard Nisa
 
 exclude: [Gemfile, Gemfile.lock, README.md]
-permalink: /:categories/:title
+permalink: /:title
+paginate: 5
+paginate_path: "page/:num"
