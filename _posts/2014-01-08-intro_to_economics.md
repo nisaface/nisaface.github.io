@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: post
 title: "Intro to Economics"
 category: teaching
-filename: 2014-01-08-intro_to_economics
-cover: <img class="left" src="http://www.crisisofenclosure.com/images/photos/econ.jpg" width="180" height="270">
+cover: econ.jpg
 bookauthor: "Geography 1111 :: Economics 1111"
 booktitle: Intro to Economics
 citation: Spring 2014
-coverthumb: <img class="left" src="http://www.crisisofenclosure.com/images/photos/thumbs/econ.jpg" width="90" height="142">
-photothumb:
 ---
 
 Spring 2014

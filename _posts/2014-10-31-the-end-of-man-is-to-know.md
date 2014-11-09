@@ -1,14 +1,6 @@
 ---
 layout: post
 title: "The end of man is to know"
-category: blog
-filename: 2014-10-31-the_end_of_man_is_to_know
-cover:
-bookauthor:
-booktitle:
-citation:
-coverthumb:
-photothumb:
 ---
 
 I'm working on putting together two talks for next week, and in reading something I wrote a long time ago, I came across this really great quote from Robert Penn Warren's _All the King's Men_:
