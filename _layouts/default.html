@@ -8,30 +8,36 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.owner.name }}">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
 
     <header class="site-header" role="banner">
-      <a class="site-title" href="/">{{ site.title }}</a>
-      <p class="site-description">{{ site.description }}</p>
-      <nav class="site-nav">
-        <ul class="site-nav-list">
-          <!-- <li class="site-nav-item"><a {% if page.category == 'blog' or page.type == 'blog' %}class="is-active" {% endif %} href="/blog/">Blog</a></li>
-          <li class="site-nav-item"><a {% if page.category == 'reading' or page.type == 'reading' %}class="is-active" {% endif %} href="/reading/">Reading</a></li>
-          <li class="site-nav-item"><a {% if page.category == 'longform' or page.type == 'longform' %}class="is-active" {% endif %} href="/longform/">Longform</a></li>
-          <li class="site-nav-item"><a {% if page.category == 'teaching' or page.type == 'teaching' %}class="is-active" {% endif %} href="/teaching/">Teaching</a></li> -->
-          <li class="site-nav-item"><a {% if page.title == 'About' %}class="is-active" {% endif %} href="/about/">About</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="site-title" href="/">{{ site.title }}</a>
+        <p class="site-description">{{ site.description }}</p>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <!-- <li class="site-nav-item"><a {% if page.category == 'blog' or page.type == 'blog' %}class="is-active" {% endif %} href="/blog/">Blog</a></li>
+            <li class="site-nav-item"><a {% if page.category == 'reading' or page.type == 'reading' %}class="is-active" {% endif %} href="/reading/">Reading</a></li>
+            <li class="site-nav-item"><a {% if page.category == 'longform' or page.type == 'longform' %}class="is-active" {% endif %} href="/longform/">Longform</a></li>
+            <li class="site-nav-item"><a {% if page.category == 'teaching' or page.type == 'teaching' %}class="is-active" {% endif %} href="/teaching/">Teaching</a></li> -->
+            <li class="site-nav-item"><a class="site-nav-link" {% if page.title == 'About' %}class="is-active" {% endif %} href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="main" role="main">
-      {{ content | markdownify }}
+      <div class="container">
+        {{ content | markdownify }}
+      </div>
     </div>
 
     <footer class="site-footer" role="contentinfo">
-      <p class="copyright">© Copyright {{ site.owner.name }} 2010-{{ site.time | date: "%Y" }}</p>
+      <div class="container">
+        <p class="copyright">© Copyright {{ site.owner.name }} 2010-{{ site.time | date: "%Y" }}</p>
+      </div>
     </footer>
 
     <script type="text/javascript">
