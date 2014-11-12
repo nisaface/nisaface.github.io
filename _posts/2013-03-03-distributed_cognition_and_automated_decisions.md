@@ -11,3 +11,5 @@ On a recent interview, someone suggested that I might be interested in the work 
 This is certainly interesting and I look forward to thinking more about it in relation to digital biometrics in the military theater. Also interesting is the fact that there is a scholarly journal called [_Law, Probability & Risk_](http://lpr.oxfordjournals.org/). How did I miss this? While I can't spend much time with it today, I look forward to diving into the back issues while I read some Ian Hacking for a reading group.  Hopefully, the tandem will be useful.
 
 On the off chance that the interviewer is reading this…thanks for the tip!
+{: .note}
+
