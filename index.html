@@ -6,9 +6,10 @@ title: Home
 {% for post in paginator.posts %}
   <article class="post">
     <header class="post-header">
-      <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>
-      <a class="post-category" href="/category/{{ post.category }}/">{{ post.category }}</a>
+      {% if post.category %}<a class="post-category" href="{{ site.url }}/category/{{ post.category }}/">{{ post.category }}</a>{% endif %}
+      {% if post.image %}<img src="{{ site.url }}/img/{{ post.image }}">{% endif %}
     </header>
     <div class="post-content">
       {{ post.content }}
@@ -19,10 +20,10 @@ title: Home
 {% if paginator.total_pages > 1 %}
   <nav class="pagination">
     {% if paginator.previous_page %}
-      <a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer</a>
+      <a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">Newer</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a class="pagination-link older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older</a>
+      <a class="pagination-link older" href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Older</a>
     {% endif %}
   </nav>
 {% endif %}

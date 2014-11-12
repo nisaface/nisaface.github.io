@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Surveillance and Security"
+subtitle: "Geography 3030 - Surveillance and Security"
 category: teaching
-cover: surv.jpg
-bookauthor: "Geography 3030"
-booktitle: Surveillance and Security
-citation: Spring 2014
+image: surv.jpg
 ---
 
 Spring 2014
@@ -22,5 +20,3 @@ Spring 2014
 Course Description
 
 Recent revelations about data collection by actors as varied as the National Security Agency and Facebook have challenged many of our most basic beliefs about power and privacy. It is increasingly clear that our bodies, images, and words are ceaselessly tracked, sorted, profiled, stored in databases, and recalled by algorithms—all in the name of a loosely defined concept called ‘security’. In this class, we will interrogate these uneasy relationships between surveillance and security, looking at both state surveillance practices as well as visual practices aimed at monitoring the state. By engaging with a broad array of media – academic research, social theory, television, film, fiction - we will debate the role of surveillance in generating security, but also focus on the ways that broad data collection can actually enable populations to act in new and beneficial ways.
-
-![Alt text](img/surv.jpg)

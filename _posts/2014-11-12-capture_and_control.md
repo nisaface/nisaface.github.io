@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Capture and Control: Geographies of Detention and Incarceration"
+subtitle: "Geography/Criminology 3040 - Capture and Control: Geographies of Detention and Incarceration"
 category: teaching
-cover: saltpit.jpg
-bookauthor: "Geography/Criminology 3040"
-booktitle: "Capture and Control: Geographies of Detention and Incarceration"
-citation: Spring 2015
+image: saltpit.jpg
 ---
 
 Spring 2015
@@ -16,6 +14,3 @@ Modern democratic states often rely on practices of detention and incarceration 
 Justification
 
 Globalization, as an economic process and spatial practice, is often associated with movement, speed, and dynamism. However, with increasing regularity, spatial isolation is called on to preserve or secure these spaces of movement and exchange. Moving beyond simple walls and cages, detention spaces are increasingly intertwined with the cross-border flows of people, goods, and capital that have come to describe global modernity. This poses challenging legal, spatial, economic, and political issues at the heart of globalization, and these will frame class discussions and debates.
-
-
-![Alt text](../img/saltpit.jpg)
