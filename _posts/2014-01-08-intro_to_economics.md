@@ -14,4 +14,4 @@ This course serves as an introduction to the core principles, theories, and hist
 
 This is not technically a microeconomics course, nor is it a macroeconomics course. Instead, this class seeks to foster critical economic thinking and prepare students to engage with broad economic debates in order to understand the role that markets and exchange play in structuring our world.
 
-![Alt text](img/econ.jpg)
+![Alt text](../img/econ.jpg)
