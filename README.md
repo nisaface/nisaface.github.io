@@ -6,7 +6,7 @@
 
 ## Starting the App
 cd Sites/crisisofenclosure/
-* run command `bundle exec jekyll serve` to start jekyll serving files
+* run command `bundle exec jekyll serve --config _config.yml,_config-dev.yml` to start jekyll serving files
 * visit http://0.0.0.0:4000 to see the site running locally
 * press `ctrl-c` to stop
 
