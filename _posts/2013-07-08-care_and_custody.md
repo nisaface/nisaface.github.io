@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Care and Custody"
-image: cover.jpg
 ---
 
 Yasiin Bey (Mos Def) agreed to be force-fed and filmed in a video put together by the amazing folks at [Reprieve](http://www.reprieve.org.uk/). While certainly a problematic aestheticization of the practice, it is still extremely important—if uncomfortable—viewing:

@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Normalize
+   ========================================================================== */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -426,7 +429,10 @@ th {
   padding: 0;
 }
 
-/*! Typography */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 body {
   background-color: #ffffff;
@@ -552,9 +558,7 @@ pre code {
 /*s*/
 /*samp*/
 
-small {
-  font-size: .875em;
-}
+/*small*/
 
 /*strong*/
 /*sub*/
@@ -596,21 +600,78 @@ figure {
   max-width: 100%;
 }
 
-/*! Layout */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
 
 * {
   box-sizing: border-box;
 }
 
+/* maintains overall site width */
 .container {
   margin: 0 auto;
-  max-width: 35em;
+  max-width: 1000px;
   padding: 1em;
 }
 
-/* Post */
+/* Header
+   ========================================================================== */
+.site-header {
+}
+
+.site-title {
+}
+
+.site-description {
+}
+
+/* Nav
+   ========================================================================== */
+.site-nav {
+}
+
+.site-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav-item {
+}
+
+.site-nav-link {
+  border-bottom: none;
+  padding: .5em 1em;
+  text-align: center;
+}
+
+/* Post
+   ========================================================================== */
+.post {
+  border-top: .125em solid #E3E3E3;
+  padding: 2em 0 1em;
+}
+
+.post-header {
+}
 
 .post-title {
-  font-weight: normal;
-  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.post-date {
+}
+
+.post-category {
+}
+
+.post-image {
+}
+
+.post-content {
+  max-width: 35em;
+  margin: 0 auto;
+
 }
