@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Test Draft Post"
-image: foo.jpg
+image: "http://placekitten.com/g/200/200"
 ---
+
+The image field can be a reference to a local file `foo.jpg` or a full domain `http://placekitten.com/g/200/200`
 
 # Header 1
 

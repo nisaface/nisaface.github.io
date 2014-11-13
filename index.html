@@ -7,9 +7,10 @@ title: Home
   <article class="post">
     <header class="post-header">
       <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
       <time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>
       {% if post.category %}<a class="post-category" href="{{ site.url }}/category/{{ post.category }}/">{{ post.category }}</a>{% endif %}
-      {% if post.image %}<img src="{{ site.url }}/img/{{ post.image }}">{% endif %}
+      {% if post.image %}{% if post.image contains 'http' %}<img class="post-image" src="{{ post.image }}">{% else%}<img class="post-image" src="{{ site.url }}/img/{{ post.image }}">{% endif %}{% endif %}
     </header>
     <div class="post-content">
       {{ post.content }}

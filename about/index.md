@@ -5,7 +5,7 @@ title: About
 
 # Richard Nisa
 
-To access the most recent iteration of my CV, click [here](docs/cv.pdf).
+To access the most recent iteration of my CV, click [here]({{ site.url }}/docs/cv.pdf).
 
 I am an [Assistant Professor](http://view.fdu.edu/default.aspx?id=9367) of Geography at Fairleigh Dickinson University's Madison Campus. My days are passed fumbling through the challenges of new-fatherhood, teaching, and researching and writing on a host of issues at the interface between geography, history, and architecture. My general academic interests revolve around military detention, discourses of security, the human body, and media practices.
 

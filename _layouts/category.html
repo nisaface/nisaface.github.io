@@ -2,19 +2,20 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="category-title">{{ page.title }}</h1>
 
 {% unless page.content == '' %}
-  <p>{{ page.content }}</p>
+  <p class="category-description">{{ page.content }}</p>
 {% endunless %}
 
 <ul class="category-list">
   {% for post in site.categories.[page.type] %}
     <li class="category-item">
-      <a href="{{ site.url }}{{ post.url }}">
-        {% if post.image %}<img src="{{ site.url }}/img/{{ post.image }}">{% endif %}
-        {{ post.title }}
-        <time>{{ post.date | date_to_string }}</time>
+      <a class="category-link" href="{{ site.url }}{{ post.url }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        <time class="post-date">{{ post.date | date_to_string }}</time>
+        {% if post.image %}{% if post.image contains 'http' %}<img class="post-image" src="{{ post.image }}">{% else%}<img  class="post-image" src="{{ site.url }}/img/{{ post.image }}">{% endif %}{% endif %}
       </a>
     </li>
   {% endfor %}
