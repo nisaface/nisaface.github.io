@@ -4,13 +4,22 @@ title: Home
 ---
 
 {% for post in paginator.posts %}
-  <article class="post">
+
+  {% if post.image %}
+    {% if post.image contains 'http' %}
+      {% assign imageurl = post.image %}
+    {% else%}
+      {% capture imageurl %}{{site.url}}/img/{{ post.image}}{% endcapture %}
+    {% endif %}
+  {% endif %}
+
+  <article class="post {% if post.category %}{{ post.category }}{% endif %} listing">
     <header class="post-header">
-      <time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>
-      <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <span class="post-meta"><time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>{% if post.category %} <a class="post-category" href="{{ site.url }}/category/{{ post.category }}/">{{ post.category }}</a>{% endif %}</span>
+
+      {% if post.image %}<img class="post-image" src="{{ imageurl }}">{% endif %}
+      <h2 class="post-title">{% if post.category == 'reading'%}<em>{% endif %}<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% if post.category == 'reading'%}</em>{% endif %}</h2>
       {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
-      {% if post.category %}<a class="post-category" href="{{ site.url }}/category/{{ post.category }}/">{{ post.category }}</a>{% endif %}
-      {% if post.image %}{% if post.image contains 'http' %}<img class="post-image" src="{{ post.image }}">{% else%}<img class="post-image" src="{{ site.url }}/img/{{ post.image }}">{% endif %}{% endif %}
     </header>
     <div class="post-content">
       {% assign content = post.content | split: '<!-- more -->' %}

@@ -2,17 +2,15 @@
 layout: post
 title: "Capture and Control: Geographies of Detention and Incarceration"
 category: teaching
-cover: saltpit.jpg
-bookauthor: "Geography/Criminology 3040"
-booktitle: "Capture and Control: Geographies of Detention and Incarceration"
-citation: Spring 2015
+image: "saltpit.jpg"
+subtitle: "Geography/Criminology 3040 - Spring 2015"
 ---
 
-Spring 2015
-
-Course Description
+## Course Description
 
 Modern democratic states often rely on practices of detention and incarceration in order to demonstrate (and increasingly, to circumvent) the power of the rule of law. As a result, international and domestic detention spaces like refugee camps, jails and for-profit prisons, war prisons, black sites, migrant detention islands, border checkpoints, and protest camps are utilized in an ever-expanding number of spatial, legal, and political contexts. In this course we will explore these spaces, and engage in a detailed historical and theoretical investigation of the complex and often-contradictory processes that produce them.
+
+<!-- more -->
 
 Justification
 

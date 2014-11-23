@@ -690,16 +690,27 @@ figure {
   margin: 0 auto;
 }
 
-.post-date {
-  color: #939597;
-  font-size: .75em;
-  font-style: italic;
+.post-subtitle {
+  font-size: 1em;
+  max-width: 35em;
+  margin: 1em auto;
 }
 
+.post-meta {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.post-date,
 .post-category {
+  font-size: .75em;
+  font-style: italic;
+  color: #939597;
+  border-bottom: none;
 }
 
 .post-image {
+
 }
 
 .post-content {
@@ -707,10 +718,33 @@ figure {
   margin: 0 auto;
 }
 
+.post img {
+  border: .5em #d1d2d4 solid;
+}
+
 /* Single Post Styles */
 
 .single {
   border-bottom: none;
+}
+
+/* List of Posts Styles */
+
+.listing {
+
+}
+
+/* "blog" Category Specific Styles */
+
+.blog {
+
+}
+
+/* "reading" Category Specific Styles */
+
+.reading .post-image,
+.teaching .post-image {
+
 }
 
 /* Site Footer
@@ -732,14 +766,21 @@ figure {
 
 @media only screen and (min-width: 42em){
   .post-content,
-  .post-title {
+  .post-title,
+  .post-subtitle {
     margin-left: 25%;
   }
 
-  .post-date {
+  .post-meta {
     float: left;
     width: 25%;
-    margin-bottom: 1em;
+  }
+
+  .reading .post-image,
+  .teaching .post-image {
+    float: left;
+    margin: 0 1em 1em 0;
+    max-width: 25%;
   }
 }
 
@@ -749,7 +790,7 @@ figure {
     margin-left: 33.33%;
   }
 
-  .post-date {
+  .post-meta {
     width: 33.33%;
   }
 }

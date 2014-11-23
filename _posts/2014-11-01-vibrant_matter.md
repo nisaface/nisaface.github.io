@@ -2,12 +2,14 @@
 layout: post
 title: "Vibrant Matter: A Political Ecology of Things"
 category: reading
+image: "bennett.jpg"
 ---
+
 Jane Bennett, J. 2010. Durham, NC: Duke University Press.
-![bennett](../img/bennett.jpg)
 
 The lovely piece on the cover is called Neither From Nor Towards 1992, by Cornelia Parker.
 
+<!-- more -->
 
 With fellowship applications in and the little guy being looked after today, I got to spend some quality time reading for the dissertation. I thought I'd continue my sporadic working through readings in and around object-oriented ontology. I'm still just cracking the surface, but I figured as well that I should start trying to put my thoughts on readings up on the site—to use this place as I had initially intended it to be used. So I got through the first two chapters,this morning and am now coming back to post some thoughts quickly and get back to the book. Sadly, it feels like it's been a long time since I really read something with such interest, and I am starting to see how this approach to the world might indeed help solidify the theoretical underpinnings of my project. So, following this post today, I'll just add more thoughts to the bottom of this entry as I read (and maybe bump the date or something), that way there's only one post per book, but I'm under no pressure to complete the thing in order to outline ideas.
 

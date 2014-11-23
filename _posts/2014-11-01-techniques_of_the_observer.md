@@ -2,6 +2,7 @@
 layout: post
 title: "Techniques of the Observer"
 category: reading
+image: "crary.jpg"
 ---
 
 
@@ -14,5 +15,3 @@ This is a bit of legwork for the next chapter I'll be writing on Processing Iden
 > Jonathan Crary, from Techniques of the Observer. 1992 : MIT Press : p. 7
 
 While I'm pretty sure my project won't be about locating any ruptures, it will be about reconfiguring the things that we consider to be self-evident about objects that populate the terrain of late-modern war.
-
-![crary](../img/crary.jpg)

@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "Surveillance and Security"
-subtitle: "Geography 3030 - Surveillance and Security"
+subtitle: "Geography 3030 - Spring 2014"
 category: teaching
 image: surv.jpg
 ---
 
-Spring 2014
-
-
 > “Unfortunately, security and liberty form a zero-sum equation. The inevitable trade-off: To increase security is to decrease liberty and vice versa.
-— Walter Cronkite, journalist
+> <cite>Walter Cronkite, journalist</cite>
+
+<!-- more -->
 
 > “We only need refer to the necessary controls and constraints of the railway, airway or highway infrastructures to see the fatal impulse: the more speed increases the faster freedom decreases.”
 — Paul Virilio, Speed and Politics
