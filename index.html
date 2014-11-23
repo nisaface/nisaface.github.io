@@ -6,20 +6,22 @@ title: Home
 {% for post in paginator.posts %}
   <article class="post">
     <header class="post-header">
+      <time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>
       <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
-      <time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time>
       {% if post.category %}<a class="post-category" href="{{ site.url }}/category/{{ post.category }}/">{{ post.category }}</a>{% endif %}
       {% if post.image %}{% if post.image contains 'http' %}<img class="post-image" src="{{ post.image }}">{% else%}<img class="post-image" src="{{ site.url }}/img/{{ post.image }}">{% endif %}{% endif %}
     </header>
     <div class="post-content">
-      {{ post.content }}
+      {% assign content = post.content | split: '<!-- more -->' %}
+      {{ content[0] }}
+      {% if content[1] %}<a href="{{ site.url }}{{ post.url }}">Read More</a>{% endif %}
     </div>
   </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-  <nav class="pagination">
+  <nav class="pagination container">
     {% if paginator.previous_page %}
       <a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">Newer</a>
     {% endif %}

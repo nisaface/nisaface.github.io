@@ -619,38 +619,57 @@ figure {
 /* Header
    ========================================================================== */
 .site-header {
+  background-color: #666872;
+  color: #FFFFFF;
 }
 
 .site-title {
+  color: #FFFFFF;
+  border-bottom: 0;
+  text-transform: lowercase;
+  font-size: 2em;
 }
 
 .site-description {
+  margin-top: 0;
 }
 
 /* Nav
    ========================================================================== */
 .site-nav {
+  background-color: #000000;
 }
 
 .site-nav-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
 .site-nav-item {
+  display: inline;
 }
 
 .site-nav-link {
   border-bottom: none;
   padding: .5em 1em;
   text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.is-active {
+  color: yellow;
+}
+
+.pagination {
+  max-width: 37em;
+  margin: 0 auto;
 }
 
 /* Post
    ========================================================================== */
 .post {
-  border-top: .125em solid #E3E3E3;
+  border-bottom: .125em solid #E3E3E3;
   padding: 2em 0 1em;
 }
 
@@ -659,9 +678,15 @@ figure {
 
 .post-title {
   margin-top: 0;
+  font-size: 2em;
+  max-width: 17.5em;
+  margin: 0 auto;
 }
 
 .post-date {
+  float: left;
+  font-size: .75em;
+  font-style: italic;
 }
 
 .post-category {
@@ -673,5 +698,11 @@ figure {
 .post-content {
   max-width: 35em;
   margin: 0 auto;
+}
 
+/* Site Footer
+========================================================================== */
+.site-footer {
+  background-color: #666872;
+  color: #FFFFFF;  
 }
