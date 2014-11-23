@@ -630,11 +630,14 @@ figure {
   color: #FFFFFF;
   border-bottom: 0;
   text-transform: lowercase;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .site-description {
-  margin-top: 0;
+  margin: 0;
+  font-size: .75em;
+  font-style: italic;
+  color: #939597;
 }
 
 /* Nav
@@ -649,12 +652,13 @@ figure {
 }
 
 .site-nav-item {
-  display: inline;
+  /*display: inline;*/
 }
 
 .site-nav-link {
   border-bottom: none;
-  padding: .5em 1em;
+  padding: .75em 1em;
+  font-size: .75em;
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -673,7 +677,11 @@ figure {
    ========================================================================== */
 .post {
   border-bottom: .125em solid #E3E3E3;
-  padding: 2em 0 1em;
+  padding: 1em 0;
+}
+
+.post.single {
+  border-bottom: none;
 }
 
 .post-header {
@@ -687,7 +695,7 @@ figure {
 }
 
 .post-date {
-  float: left;
+  color: #939597;
   font-size: .75em;
   font-style: italic;
 }
