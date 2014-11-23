@@ -435,8 +435,8 @@ th {
    ========================================================================== */
 
 body {
-  background-color: #ffffff;
-  color: #444444;
+  background-color: #666872;
+  color: #FFFFFF;
   font-family: 'athelas-1','athelas-2', Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
   line-height: 1.4;
@@ -616,11 +616,14 @@ figure {
   padding: 1em;
 }
 
+.main {
+  background-color: #ffffff;
+  color: #444444;
+}
+
 /* Header
    ========================================================================== */
 .site-header {
-  background-color: #666872;
-  color: #FFFFFF;
 }
 
 .site-title {
@@ -703,6 +706,4 @@ figure {
 /* Site Footer
 ========================================================================== */
 .site-footer {
-  background-color: #666872;
-  color: #FFFFFF;  
 }

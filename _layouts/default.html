@@ -15,15 +15,18 @@
     <header class="site-header" role="banner">
       <nav class="site-nav">
         <ul class="site-nav-list container">
-          <li class="site-nav-item"><a class="site-nav-link" {% if page.category == 'blog' or page.type == 'blog' %}class="is-active" {% endif %} href="{{ site.url }}">Blog</a></li>
-          <li class="site-nav-item"><a class="site-nav-link"{% if page.title == 'Reading' %}class="is-active" {% endif %} href="{{ site.url }}/category/reading/">Reading</a></li>
-          <li class="site-nav-item"><a class="site-nav-link"{% if page.category == 'longform' or page.type == 'longform' %}class="is-active" {% endif %} href="{{ site.url }}/category/longform/">Longform</a></li>
-          <li class="site-nav-item"><a class="site-nav-link"{% if page.category == 'teaching' or page.type == 'teaching' %}class="is-active" {% endif %} href="{{ site.url }}/category/teaching/">Teaching</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" {% if page.title == 'About' %}class="is-active" {% endif %} href="{{ site.url }}/about/">About</a></li>
+          <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'blog' or page.type == 'blog' or page.title == 'Home' %} is-active{% endif %}" href="{{ site.url }}">Blog</a></li>
+          <li class="site-nav-item"><a class="site-nav-link {% if page.category == 'reading' or page.type == 'reading' %} is-active{% endif %}" href="{{ site.url }}/category/reading/">Reading</a></li>
+          <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'longform' or page.type == 'longform' %} is-active{% endif %}" href="{{ site.url }}/category/longform/">Longform</a></li>
+          <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'teaching' or page.type == 'teaching' %} is-active{% endif %}" href="{{ site.url }}/category/teaching/">Teaching</a></li>
+          <li class="site-nav-item"><a class="site-nav-link{% if page.title == 'About' %} is-active{% endif %}" href="{{ site.url }}/about/">About</a></li>
         </ul>
       </nav>
 
       <div class="container">
+        {{page.category}}
+        {{page.type}}
+        {% if page.type == 'teaching' %}class="is-active" {% endif %}
         <a class="site-title" href="{{ site.url }}">{{ site.title }}</a>
         <p class="site-description">{{ site.description }}</p>
       </div>
