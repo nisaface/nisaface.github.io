@@ -2,17 +2,23 @@
 layout: default
 ---
 
-<article class="post single">
+{% if page.image %}
+  {% if page.image contains 'http' %}
+    {% assign imageurl = page.image %}
+  {% else%}
+    {% capture imageurl %}{{site.url}}/img/{{ page.image}}{% endcapture %}
+  {% endif %}
+{% endif %}
+
+<article class="post {% if page.category %}{{ page.category }}{% endif %} single">
   <header class="post-header">
     <time class="post-date">{{ page.date | | date: "%-d %B %Y" }}</time>
+    {% if page.image %}<img class="post-image" src="{{ imageurl }}">{% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
 
     {% if page.subtitle %}<h2 class="post-subtitle">{{ page.subtitle }}</h2>{% endif %}
 
-
     {% if page.category %}<a class="post-category" href="{{ site.url }}/category/{{ page.category }}/">{{ page.category }}</a>{% endif %}
-
-    {% if page.image %}{% if page.image contains 'http' %}<img class="post-image" src="{{ page.image }}">{% else%}<img class="post-image" src="{{ site.url }}/img/{{ page.image }}">{% endif %}{% endif %}
 
   </header>
   <div class="post-content">

@@ -680,10 +680,6 @@ figure {
   padding: 1em 0;
 }
 
-.post.single {
-  border-bottom: none;
-}
-
 .post-header {
 }
 
@@ -709,6 +705,12 @@ figure {
 .post-content {
   max-width: 35em;
   margin: 0 auto;
+}
+
+/* Single Post Styles */
+
+.single {
+  border-bottom: none;
 }
 
 /* Site Footer
