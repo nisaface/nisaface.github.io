@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "Test Draft Post"
+subtitle: "Subtitle Here"
 category: blog
 image: "http://placekitten.com/g/1000/500"
 ---
 
 The image field can be a reference to a local file `foo.jpg` or a full domain `http://placekitten.com/g/200/200`
+
+If you want to include a "Read More" link and continue the post on the single post page, just include a `<!-- more -->` tag in the text where you want a break.
+
+<!-- more -->
 
 Links are formatted like [Kramdown flavored markdown reference](http://kramdown.gettalong.org/quickref.html).
 
@@ -46,3 +51,8 @@ This is *emphasized*, _this_ too!
 This is **strong**, __this__ too!
 
 ![Image Test](http://placekitten.com/g/200/300)
+
+This next image will take up the "full" width (up to 1000px). It has a class of `{: .full}`
+
+![Image Test](http://placekitten.com/g/1000/500)
+{: .full}
