@@ -717,3 +717,39 @@ figure {
 ========================================================================== */
 .site-footer {
 }
+
+/* Media Queries
+========================================================================== */
+@media only screen and (min-width: 37em){
+  body {
+    font-size: 1.125em;
+  }
+
+  .site-nav-item {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 42em){
+  .post-content,
+  .post-title {
+    margin-left: 25%;
+  }
+
+  .post-date {
+    float: left;
+    width: 25%;
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 55em){
+  .post-content,
+  .post-title {
+    margin-left: 33.33%;
+  }
+
+  .post-date {
+    width: 33.33%;
+  }
+}
