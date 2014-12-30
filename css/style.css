@@ -630,12 +630,12 @@ figure {
   color: #FFFFFF;
   border-bottom: 0;
   text-transform: lowercase;
-  font-size: 1.5em;
+  font-size: 1.45em;
 }
 
 .site-description {
   margin: 0;
-  font-size: .75em;
+  font-size: .95em;
   font-style: italic;
   color: #939597;
 }
@@ -686,8 +686,9 @@ figure {
 .post-title {
   margin-top: 0;
   font-size: 1.25em;
-  max-width: 17.5em;
+  max-width: 50em;
   margin: 0 auto;
+  color: #666873;
 }
 
 .post-subtitle {
