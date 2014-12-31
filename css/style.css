@@ -445,7 +445,6 @@ body {
 
 a {
   color: #1d1d1d;
-  border-bottom: 1px dotted #529edc;
   text-decoration: none;
 }
 
@@ -506,7 +505,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 h3 {
@@ -693,13 +693,19 @@ figure {
 }
 
 .post-title a {
-  color: red;
+  color: #666873;
+}
+
+.post-title a:hover {
+  color: #529edc;
 }
 
 .post-subtitle {
   font-size: 1em;
   max-width: 35em;
   margin: 1em auto;
+  font-weight: normal;
+  color: #529edc;
 }
 
 .post-meta {
