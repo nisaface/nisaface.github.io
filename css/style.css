@@ -688,7 +688,11 @@ figure {
   font-size: 1.25em;
   max-width: 50em;
   margin: 0 auto;
-  color: #666873;
+  font-weight: normal;
+}
+
+.post-title a {
+  color: red;
 }
 
 .post-subtitle {
