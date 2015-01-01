@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Capture at the Speed of Bandwidth: Digital Biometric Encounters in the Everywhere War"
+subtitle: Abstract for a Paper Session
 category: longform
 ---
-
-## Abstract for a Paper Session
 
 ### Calculative Devices in a Digital Age Conference, Durham University, November 2013
 

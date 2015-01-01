@@ -15,7 +15,7 @@ layout: default
     <span class="post-meta"><time class="post-date">{{ page.date | | date: "%-d %B %Y" }}</time>{% if page.category %} <a class="post-category" href="{{ site.url }}/category/{{ page.category }}/">{{ page.category }}</a>{% endif %}</span>
     {% if page.image %}<img class="post-image" src="{{ imageurl }}">{% endif %}
     <h1 class="post-title">{% if post.category == 'reading'%}<em>{% endif %}{{ page.title }}{% if post.category == 'reading'%}</em>{% endif %}</h1>
-    {% if page.subtitle %}<h2 class="post-subtitle">{{ page.subtitle }}</h2>{% endif %}
+    {% if page.subtitle %}<h3 class="post-subtitle">{{ page.subtitle }}</h3>{% endif %}
   </header>
   <div class="post-content">
     {{ page.content | markdownify }}
