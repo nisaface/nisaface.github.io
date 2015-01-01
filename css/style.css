@@ -613,7 +613,7 @@ figure {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 1em;
+  padding: .5em;
 }
 
 .main {
@@ -624,7 +624,6 @@ figure {
 /* Header
    ========================================================================== */
 .site-header {
-  height: 175px;
 }
 
 .site-title {
@@ -632,6 +631,7 @@ figure {
   border-bottom: 0;
   text-transform: lowercase;
   font-size: 1.45em;
+  margin-left: 20%;
 }
 
 .site-description {
@@ -639,6 +639,8 @@ figure {
   font-size: .95em;
   font-style: italic;
   color: #939597;
+  margin-left: 20%;
+
 }
 
 /* Nav
@@ -649,7 +651,7 @@ figure {
 
 .site-nav-list {
   list-style: none;
-  text-align: center;
+  margin-left: 20%;
 }
 
 .site-nav-item {
@@ -658,7 +660,7 @@ figure {
 
 .site-nav-link {
   border-bottom: none;
-  padding: .75em 1em;
+  padding: .5em 1.25em;
   font-size: .75em;
   text-align: center;
   color: #FFFFFF;
@@ -703,7 +705,7 @@ figure {
 
 .post-subtitle {
   font-size: 1em;
-  max-width: 35em;
+  max-width: 50em;
   margin: 1em auto;
   font-weight: normal;
   color: #529edc;
@@ -727,7 +729,7 @@ figure {
 }
 
 .post-content {
-  max-width: 35em;
+  max-width: 50em;
   margin: 0 auto;
 }
 
@@ -785,7 +787,7 @@ figure {
   .post-content,
   .post-title,
   .post-subtitle {
-    margin-left: 25%;
+    margin-left: 5%;
   }
 
   .post-meta {

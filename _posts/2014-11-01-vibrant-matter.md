@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vibrant Matter: A Political Ecology of Things"
-subtitle: "Jane Bennet"
+subtitle: "Jane Bennett"
 category: reading
 ---
 
