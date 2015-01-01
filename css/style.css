@@ -624,6 +624,7 @@ figure {
 /* Header
    ========================================================================== */
 .site-header {
+  height: 152px;
 }
 
 .site-title {
@@ -651,7 +652,7 @@ figure {
 
 .site-nav-list {
   list-style: none;
-  margin-left: 20%;
+  text-align: center;
 }
 
 .site-nav-item {
@@ -679,24 +680,25 @@ figure {
 /* Post
    ========================================================================== */
 .post {
-  border-bottom: .125em solid #E3E3E3;
+  border-bottom: 1px dotted #529edc;
   padding: 1em 0;
 }
 
 .post-header {
+  padding: .25em 0;
 }
 
 .post-title {
-  margin-top: 0;
-  font-size: 1.25em;
+  margin bottom: 1em;
+  font-size: 1.2em;
   max-width: 50em;
-  margin: 0 auto;
+  margin: 0 auto 0;
   color: #666873;
   font-weight: normal;
 }
 
 .post-title a {
-  color: #666873;
+  color: #000000;
 }
 
 .post-title a:hover {
@@ -706,8 +708,9 @@ figure {
 .post-subtitle {
   font-size: 1em;
   max-width: 50em;
-  margin: 1em auto;
+  margin: .125em auto;
   font-weight: normal;
+  font-style: italic;
   color: #529edc;
 }
 
@@ -729,8 +732,10 @@ figure {
 }
 
 .post-content {
+  font-size: .95em;
   max-width: 50em;
   margin: 0 auto;
+  color: #666873;
 }
 
 .post img {
