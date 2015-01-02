@@ -470,6 +470,8 @@ blockquote cite {
   font-family: Helvetica, Verdana, Arial, sans-serif;
   margin-top: .5em;
   font-size: .875em;
+  color: #39B54A;
+
 }
 
 /*cite*/
@@ -510,7 +512,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: black;
 }
 
 h4,
@@ -618,31 +622,32 @@ figure {
 
 .main {
   background-color: #ffffff;
-  color: #444444;
+  color: #666873;
 }
 
 /* Header
    ========================================================================== */
 .site-header {
-  height: 152px;
+  height: 125px;
 }
 
 .site-title {
   color: #FFFFFF;
   border-bottom: 0;
   text-transform: lowercase;
-  font-size: 1.45em;
-  margin-left: 20%;
+  font-size: 1.5em;
+  margin-left: 27%;
 }
 
 .site-description {
-  margin: 0;
+  margin-top: -5px;
   font-size: .95em;
   font-style: italic;
-  color: #939597;
-  margin-left: 20%;
+  color: #D1D3D4;
+  margin-left: 27%;
 
 }
+
 
 /* Nav
    ========================================================================== */
@@ -689,11 +694,12 @@ figure {
 }
 
 .post-title {
-  margin bottom: 1em;
+  margin-bottom: 1em;
+  margin-top: 2em;
   font-size: 1.2em;
   max-width: 50em;
   margin: 0 auto 0;
-  color: #666873;
+  color: #000000;
   font-weight: normal;
 }
 
@@ -719,11 +725,17 @@ figure {
   margin-bottom: 1em;
 }
 
-.post-date,
+.post-date {
+font-size: .75em;
+font-style: italic;
+color: #939597;
+border-bottom: none;
+}
+
 .post-category {
   font-size: .75em;
   font-style: italic;
-  color: #939597;
+  color: #ffffff;
   border-bottom: none;
 }
 
@@ -732,7 +744,8 @@ figure {
 }
 
 .post-content {
-  font-size: .95em;
+  font-size: .9em;
+  line-height: 1.5em;
   max-width: 50em;
   margin: 0 auto;
   color: #666873;
@@ -740,6 +753,16 @@ figure {
 
 .post img {
   border: .5em #d1d2d4 solid;
+}
+
+.post-content a {
+  color: #529edc;
+  text-decoration: underline;
+
+}
+
+.post-content a:hover {
+  color: #2788E1;
 }
 
 .full {
@@ -797,14 +820,14 @@ figure {
 
   .post-meta {
     float: left;
-    width: 25%;
+    width: 27%;
   }
 
   .reading .post-image,
   .teaching .post-image {
     float: left;
     margin: 0 1em 1em 0;
-    max-width: 25%;
+    max-width: 27%;
   }
 
   .full {
@@ -825,11 +848,11 @@ figure {
   .post-content,
   .post-title,
   .post-subtitle {
-    margin-left: 33.33%;
+    margin-left: 27%;
   }
 
   .post-meta {
-    width: 33.33%;
+    width: 27%;
   }
 
   .full {
@@ -840,6 +863,6 @@ figure {
   /*blockquote cite {
     color: green;
     margin-left: -50%;
-    width: 33.33%;
+    width: 25%;
   }*/
 }

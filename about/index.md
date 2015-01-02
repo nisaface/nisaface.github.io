@@ -1,9 +1,7 @@
 ---
-layout: default
-title: About
+layout: post
 ---
-
-# Richard Nisa
+### Richard Nisa
 
 To access the most recent iteration of my CV, click [here]({{ site.url }}/docs/cv.pdf).
 
@@ -16,7 +14,7 @@ Before beginning my life as an academic, I worked full-time as an architect and 
 _email me at rich [at] crisisofenclosure [dot] com_  
 _twitter: [@nisaface](http://twitter.com/nisaface)_
 
-## Regarding the Crisis
+### Regarding the Crisis
 
 The title of the site comes from a short essay by French philosopher Gilles Deleuze, the English translation of which was published in the journal _October_ shortly before his death. This piece offers a prescient description of how technologies, networks, and media savvy have all contributed to the changing spatiality of power due to the collapse of more traditional “enclosed” institutions. He writes:
 

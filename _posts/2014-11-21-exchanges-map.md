@@ -2,7 +2,6 @@
 layout: post
 title: "Madness and Mapping"
 category: blog
-image: exchange-map-small.jpg
 ---
 > "You can know more and more about one thing but you can never know everything about one thing: it's hopeless. So that we live surrounded by more or less ghostly objects--that machine, there, for instance. It’s a complete ghost to me--I don’t understand a thing about it..." [^1]
 
