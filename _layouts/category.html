@@ -14,7 +14,7 @@ layout: default
       <a class="category-link" href="{{ site.url }}{{ post.url }}">
         <h2 class="post-title">{{ post.title }}</h2>
         <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-        <time class="post-date">{{ post.date | date_to_string }}</time>
+        <time class="post-date">{{ page.date | date: "%B %d, %Y" }}</time>
         {% if post.image %}{% if post.image contains 'http' %}<img class="post-image" src="{{ post.image }}">{% else%}<img  class="post-image" src="{{ site.url }}/img/{{ post.image }}">{% endif %}{% endif %}
       </a>
     </li>
