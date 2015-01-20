@@ -438,8 +438,8 @@ body {
   background-color: #666872;
   color: #FFFFFF;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: .9em;
+  line-height: 1.5;
   width: 100%;
 }
 
@@ -617,18 +617,22 @@ figure {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: .5em;
+  padding: 1em;
 }
 
 .main {
   background-color: #ffffff;
   color: #666873;
+  max-width: 65em;
+  margin: auto;
 }
 
 /* Header
    ========================================================================== */
-.site-header {
-  height: 125px;
+.site-header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .site-title {
@@ -636,7 +640,6 @@ figure {
   border-bottom: 0;
   text-transform: lowercase;
   font-size: 1.5em;
-  margin-left: 27%;
 }
 
 .site-description {
@@ -644,8 +647,13 @@ figure {
   font-size: .95em;
   font-style: italic;
   color: #D1D3D4;
-  margin-left: 27%;
+  display: none;
+}
 
+.site-branding {
+  margin: 1em auto 0;
+  width: 25%;
+  display: none;
 }
 
 
@@ -653,6 +661,11 @@ figure {
    ========================================================================== */
 .site-nav {
   background-color: #000000;
+}
+
+.site-nav .container {
+  padding-top: .125em;
+  padding-bottom: .125em;
 }
 
 .site-nav-list {
@@ -726,10 +739,10 @@ figure {
 }
 
 .post-date {
-font-size: .75em;
-font-style: italic;
-color: #939597;
-border-bottom: none;
+  font-size: .75em;
+  font-style: italic;
+  color: #939597;
+  border-bottom: none;
 }
 
 .post-category {
@@ -744,8 +757,6 @@ border-bottom: none;
 }
 
 .post-content {
-  font-size: .9em;
-  line-height: 1.5em;
   max-width: 50em;
   margin: 0 auto;
   color: #666873;
@@ -801,9 +812,29 @@ border-bottom: none;
 
 /* Media Queries
 ========================================================================== */
+@media only screen and (min-width: 30em){
+
+  .site-title {
+    display: inline-block;
+    margin-top: .5em;
+  }
+
+  .site-description {
+    display: block;
+  }
+
+  .site-branding {
+    display: block;
+    float: right;
+    margin: 0;
+    width: 20%;
+    max-width: 6.25em;
+  }
+}
+
 @media only screen and (min-width: 37em){
   body {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 
   .site-nav-item {
@@ -812,10 +843,22 @@ border-bottom: none;
 }
 
 @media only screen and (min-width: 42em){
+  .site-title,
+  .site-description,
+  .site-nav-list,
   .post-content,
   .post-title,
   .post-subtitle {
-    margin-left: 5%;
+    margin-left: 27%;
+  }
+
+  .site-nav-list {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .site-nav-item:first-of-type {
+    margin-left: -1em;
   }
 
   .post-meta {
