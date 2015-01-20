@@ -3,7 +3,7 @@ layout: post
 ---
 ### Richard Nisa
 
-To access the most recent iteration of my CV, click [here]({{ site.url }}/docs/cv.pdf).
+To access the most recent iteration of my CV, click [here](https://fdu.academia.edu/RichardNisa/CurriculumVitae).
 
 I am an [Assistant Professor](http://view.fdu.edu/default.aspx?id=9367) of Geography at Fairleigh Dickinson University's Madison Campus. My days are passed fumbling through the challenges of new-fatherhood, teaching, and researching and writing on a host of issues at the interface between geography, history, and architecture. My general academic interests revolve around military detention, discourses of security, the human body, and media practices.
 
@@ -25,4 +25,4 @@ We are all-too familiar with this collapse.  With increasing regularity, public 
 
 In the context of my work, this shift has produced a distinct set of spatial practices that challenge the prevailing logics of detention, placing an emphasis on mobile and open performances of detainment rather than a fixed institutional isolation. Ultimately, post-Cold War detention practices have endured a substantial reorientation, today representing not only the successful completion of counterinsurgency strategy, but increasingly emerging as a vital means of contemporary security practice.  Detention is no longer spatially or temporally fixed. Successful detention is not only a question of designing and constructing a secure edifice, but something much more complex. The crisis of enclosure points towards an understanding of how institutional power has leaked out of its interior and is veering towards the total decentralization and free-floating dynamism of control.
 
--New Year's Day, 2010
+--New Year's Day, 2010
