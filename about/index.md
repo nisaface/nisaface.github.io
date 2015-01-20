@@ -26,11 +26,3 @@ We are all-too familiar with this collapse.  With increasing regularity, public 
 In the context of my work, this shift has produced a distinct set of spatial practices that challenge the prevailing logics of detention, placing an emphasis on mobile and open performances of detainment rather than a fixed institutional isolation. Ultimately, post-Cold War detention practices have endured a substantial reorientation, today representing not only the successful completion of counterinsurgency strategy, but increasingly emerging as a vital means of contemporary security practice.  Detention is no longer spatially or temporally fixed. Successful detention is not only a question of designing and constructing a secure edifice, but something much more complex. The crisis of enclosure points towards an understanding of how institutional power has leaked out of its interior and is veering towards the total decentralization and free-floating dynamism of control.
 
 -New Year's Day, 2010
-
-## Colophon
-
-Most visitors to _A Crisis of Enclosure_ (depending on their web browser) will be reading licensed fonts enabled for use on the web by [Typekit](typekit.com).  Apropos of the themes of this site, the display face, [Skolar](http://www.type-together.com/Skolar), was originally designed by [David Březina](http://davi.cz/) for use in scholarly and multilingual publications.  The text face is [Athelas](http://www.type-together.com/Athelas), designed by the Type Together Foundry's Veronika Burian and José Scaglione as a contemporary take on the typography found in classic British literature.
-
-Readers who come to the site using the few browsers that do not support Typekit will have [Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface)) as their text face, and either [Helvetica](http://en.wikipedia.org/wiki/Helvetica) or [Arial](http://en.wikipedia.org/wiki/Arial) as their display face.
-
-This site is powered by [Expression Engine](http://expressionengine.com/) and most of the coding was done with [Coda](http://www.panic.com/coda/).  As I am new to both, as well as to the world of CSS, I expect that the source code for this site will be in a state of continual flux.
