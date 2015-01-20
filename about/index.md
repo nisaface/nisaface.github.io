@@ -11,7 +11,7 @@ This website would not have come into existence without a good deal of coding he
 
 Before beginning my life as an academic, I worked full-time as an architect and freelance designer in New York, Paris, and Iowa.  I still find time to design—fitting in small projects between trips to the archive and trips to the Children's Museum. I live in Brooklyn with my wife, N, and our son, H.
 
-_email me at rich [at] crisisofenclosure [dot] com_  
+_email me at nisa [at] fdu [dot] edu_  
 _twitter: [@nisaface](http://twitter.com/nisaface)_
 
 ### Regarding the Crisis
