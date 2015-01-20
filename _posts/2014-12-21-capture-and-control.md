@@ -7,8 +7,10 @@ subtitle: "Geography/Criminology 3040 - Spring 2015"
 
 I'm teaching this course for the first time in the spring. While I am still trying to finalize the readings, I thought I'd post what I have.
 
-<!-- more -->
+
 ![Alt text](../img/mast-capture.jpg)
+
+<!-- more -->
 
 ### Course Description
 
