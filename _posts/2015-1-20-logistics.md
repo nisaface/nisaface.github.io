@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seeing Logistical Spaces"
-
+category: blog
 ---
 
 I finally have time to catch up on Charmaine Chua's [recent posts](http://thedisorderofthings.com/tag/slow-boat-to-china/) from her trip aboard the *Ever Cthulhu*. The posts are fantastic, but I really really like her photographs. They've got an Ed Burtynsky or Andreas Gursky vibe. I'm really looking forward to her talk at the AAGs this year in Chicago.
