@@ -618,6 +618,12 @@ figure {
   max-width: 100%;
 }
 
+border-bottom {
+  width: 300px;
+  padding: 25px;
+  border: 25px solid navy;
+  margin: 25px;
+}
 
 /* ==========================================================================
    Layout
@@ -746,6 +752,20 @@ figure {
   font-weight: normal;
   font-style: italic;
   color: #529edc;
+}
+
+
+.post-subtitle-writing {
+  font-size: 1em;
+  max-width: 50em;
+  margin: .125em auto;
+  font-weight: normal;
+  font-style: italic;
+  color: #529edc;
+  padding-bottom: .5em;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #F0F0F0;
 }
 
 .post-meta {
