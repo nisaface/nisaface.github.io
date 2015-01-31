@@ -9,4 +9,4 @@ I finally have time to catch up on Charmaine Chua's [recent posts](http://thedis
 
 [![Charmaine Chua's dispatch](https://thedisorderofthings.files.wordpress.com/2015/01/cc_epl2_p1096666.jpg)](http://thedisorderofthings.com/2015/01/19/the-quiet-port-is-logistics-nightmare/)
 
-> <cite> Photo of stacking cranes in the port of Tacoma from Charmaine Chua's [dispatch](http://thedisorderofthings.com/2015/01/19/the-quiet-port-is-logistics-nightmare/).
+> <cite>Stacking cranes in the port of Tacoma from Charmaine Chua's [dispatch](http://thedisorderofthings.com/2015/01/19/the-quiet-port-is-logistics-nightmare/).

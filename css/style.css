@@ -456,15 +456,8 @@ a:hover {
 /*address*/
 /*b*/
 
-blockquote {
-  font-style: italic;
-  color: #787878;
-  margin-left: 1em;
-  margin-right: 1em;
-  max-width: 33em;
-}
-
-blockquote cite {
+cite {
+  border: none;
   display: block;
   font-style: normal;
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -472,7 +465,18 @@ blockquote cite {
   font-size: .875em;
   color: #39B54A;
 
+  }
+
+blockquote {
+  font-style: italic;
+  color: #989898;
+  margin-left: 1em;
+  margin-right: 1em;
+  max-width: 33em;
+  border-left: 2px solid #D0D0D0;
+  padding-left: 1.25em;
 }
+
 
 /*cite*/
 
@@ -847,6 +851,11 @@ border-bottom {
 /* Site Footer
 ========================================================================== */
 .site-footer {
+  font-size: .9em;
+  font-weight: normal;
+  float: center;
+  margin-left: 40%;
+  color: #999999;
 }
 
 /* Media Queries
@@ -923,6 +932,7 @@ border-bottom {
     margin-left: -33%;
     width: 25%;
     float: left;
+    border: none;
   }*/
 }
 
@@ -946,5 +956,6 @@ border-bottom {
     color: green;
     margin-left: -50%;
     width: 25%;
+    border: none;
   }*/
 }
