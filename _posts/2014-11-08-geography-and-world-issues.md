@@ -12,12 +12,11 @@ This is an introductory course in geography, a discipline that examines the rela
 
 > “To a revolutionary degree man changes geography as he goes along.”
 —Isaiah Bowman, 1946
-
-> “La géographie, ça sert, d’abord, à faire la guerre.”
+<br><br>
+“La géographie, ça sert, d’abord, à faire la guerre.”
 (The main purpose of Geography is to make war.)
 —Yves Lacoste, 1976
-
-> “A map is not the territory, but a territory itself.”
+<br><br>“A map is not the territory, but a territory itself.”
 —Aritha van Herk, 1982
 
 
