@@ -1,16 +1,11 @@
 ---
 layout: post
-title: "Capturing Counterinsurgency Math"
-subtitle: "Distorted Economies of Violence in Late Modern War"
+title: "Anxiety, Fear, and Rumor in the Vietnam War"
+subtitle: "Thresholds of Power Between Air and Ground"
 category: longform
 ---
 
-> Abstract for a Paper Session
+> Abstract for a Paper Session at the Critical Geography Conference, 2014
 
-> Annual Conference for the Association of American Geographers, 2013
 
-> Session Title: On the Question of Violence in the Humanitarian Present
-
-In this paper, I explore the complex economies of violence that circulate through the enactment of battlefield capture in the war in Afghanistan. The practice of wartime apprehension has long marked an interstices between the lethal violence of the frontline and the strategic advantages of detention, care, and custody—the precarious border between the utterances “kill them if they try to surrender, we need the body count” on the one hand, and “it’s impossible to interrogate a corpse” on the other. In these tense spaces of encounter, the military often struggles to maintain control over both its personnel and its narrative of legitimacy, noting in recent detainee doctrine that while apprehending a prisoner, “Soldiers must monitor and control their emotions… and those of fellow Soldiers” to keep from failing to adhere to “Army values” and the Geneva Conventions. These spaces are further destabilized in light of the complications of ‘counterinsurgency math’: the idea that if a military unit kills or captures two people, this does not reduce the enemy population by two but instead has potentially increased it by angering the friends and relatives of those killed or detained.
-
-Here I focus on the ways that this distorted arithmetic modulates the relationships between kill and capture in a ‘war for peace’. I describe how the practice of capture itself has become a site for the deployment of new forms of calculation and risk management that seek to limit the potential violence of civilians, insurgents, and military personnel alike.
+In a 1973 essay accompanying the paintings of Paul Rebeyrolle, Michel Foucault commented that in “the world of prisons, as in the world of dogs, the vertical is not one of the dimensions of space, it is the dimension of power.” In this paper I explore one particular manifestation of this threshold between spaces of detention and vertical power that emerged on, and above, the battlefields of the Vietnam War. Specifically, I detail the role of the helicopter as it was used in prisoner capture and evacuation during that war. While the helicopter is one of the most iconographic symbols of the Vietnam War, for many on the battlefield it was also their first encounter with this instable form of aerial mobility. The helicopter introduced both a new means of controlling vertical and horizontal space and a new spatial system that, in turn, necessitated the development of novel forms of management and control. Using a suite of texts that include military doctrine, technical manuals, and wartime memoirs, I will highlight the ways that the helicopter transformed the spatial relationships of the battlefield encounter by introducing yet another blank space into the disorder of war: a high-velocity, anxiety filled private space wherein ostensible enemies sat in prolonged, aerial proximity. For both civilians and combatants, this threshold between air and ground became a key dimension in the geography of power on the battlefield.
