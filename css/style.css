@@ -815,15 +815,26 @@ border-bottom {
   color: #2788E1;
 }
 
+
 .full {
   width: 100%;
 }
 
+.post-content-reading {
+  max-width: 50em;
+  margin: 0 auto;
+  color: red;
+}
 
 /* Single Post Styles */
 
 .single {
   border-bottom: none;
+}
+
+
+.single-two {
+  border-bottom: solid;
 }
 
 .ul.category-item {
