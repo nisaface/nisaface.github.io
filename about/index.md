@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "About"
+title: "Richard Nisa"
 ---
-### Richard Nisa
+
 
 To access the most recent iteration of my CV, click [here](https://fdu.academia.edu/RichardNisa/CurriculumVitae).
 
