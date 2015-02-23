@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Richard Nisa"
+category: about
 ---
 
 
