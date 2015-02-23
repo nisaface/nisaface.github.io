@@ -716,7 +716,9 @@ border-bottom {
 
 .pagination {
   max-width: 37em;
-  margin: 0 auto;
+  float: left;
+  margin: 0 1em 1em 0;
+  max-width: 27%;
 }
 
 
