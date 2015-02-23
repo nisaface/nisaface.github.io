@@ -9,7 +9,7 @@ title: Home
     {% if post.image contains 'http' %}
       {% assign imageurl = post.image %}
     {% else%}
-      {% capture imageurl %}{{site.url}}/img/{{ post.image}}{% endcapture %}
+      {% capture imageurl %}{{site.baseurl}}/img/{{ post.image}}{% endcapture %}
     {% endif %}
   {% endif %}
 
