@@ -32,10 +32,10 @@ title: Home
 {% if paginator.total_pages > 1 %}
   <nav class="pagination container">
     {% if paginator.previous_page %}
-      <a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">Newer</a>
+      <a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a class="pagination-link older" href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Older</a>
+      <a class="pagination-link older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older</a>
     {% endif %}
   </nav>
 {% endif %}

@@ -12,4 +12,4 @@ owner:
 exclude: [Gemfile, Gemfile.lock, README.md]
 permalink: /:title
 paginate: 10
-paginate_path: "/page:num"
+paginate_path: "page/:num"
