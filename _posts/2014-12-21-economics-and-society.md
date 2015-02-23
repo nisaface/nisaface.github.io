@@ -8,7 +8,7 @@ subtitle: "Geography/Economics 1111 - Spring 2015"
 Here's a link to the most recent version of my introduction to economics and economic geography.
 
 
-![Alt text](../img/econ-mast.jpg)
+![Alt text](/img/econ-mast.jpg)
 
 <!-- more -->
 
