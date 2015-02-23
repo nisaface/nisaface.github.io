@@ -467,6 +467,18 @@ cite {
 
   }
 
+.footnotes {
+    border: none;
+    display: block;
+    font-style: normal;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    margin-left: 2em;
+    font-size: .875em;
+    color: #39B54A;
+    line-height: 1em;
+
+    }
+
 blockquote {
   font-style: italic;
   color: #989898;
