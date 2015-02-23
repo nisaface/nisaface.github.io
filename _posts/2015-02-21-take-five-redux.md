@@ -7,6 +7,8 @@ Back in May of last year, I posted a [link](http://rr.proquest.com/2014/05/take-
 
 ![Lebbeus Woods](http://rr.proquest.com/wp-content/uploads/2014/04/rtake4.png)
 
+> <cite>Lebbeus Woods, “Sarajevo: Meditations ” from Radical Reconstruction, 1997
+
 <!-- more -->
 
 > *I've never really given much thought to pinning down a list of intellectual influences, so this was kind of a strange exercise. Ultimately the five texts I chose are not necessarily the _best_ books or sources, but they are ones that I think worked to nudge my thinking in a different direction at particular moments in my life.*
