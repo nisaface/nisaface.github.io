@@ -15,7 +15,7 @@ Foucault writes:
 
 In the story we are learning here, the first stage in the 'boomerang' *is* the internal colonialism Foucault foreshadows, the one practiced in Chicago by the police on communities of color. But here, it is then sent flying again towards those 'other' spaces he mentions, where they are again amplified and refined. Zuley first began working for the Chicago Police Department in 1977, so it would be interesting to learn to what degree his policing tactics were influenced by the International Police Academy and their work in Southeast Asia and Latin America during the Cold War. How long has the boomerang been flying?
 
-If nothing else, these connections and lines of flight between war and policing offer the possibility of complicating the spatial and temporal clarity of Foucault's out-and-back metaphor, or expanding the arc of the boomerang from colony&#8594;homelnd to something like:
+If nothing else, these connections and lines of flight between war and policing offer the possibility of complicating the spatial and temporal clarity of Foucault's out-and-back metaphor, or expanding the arc of the boomerang from colony&#8594;homeland to something like:
 
 <cite>war&#8594;police&#8594;war&#8594;police...
 
