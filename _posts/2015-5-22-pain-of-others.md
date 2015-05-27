@@ -12,7 +12,7 @@ Importantly too, the structuring power of the moment of death itself also mediat
 
 ![Adams](http://graphics8.nytimes.com/images/2014/09/17/blogs/20140917-lens-adams-slide-JXW5/20140917-lens-adams-slide-JXW5-superJumbo.jpg)
 
-In reading that passage I was reminded of Susan Sontag’s book Regarding the Pain of Others, in which she tackles the “breathtaking provincialism” of those caught in a Baudrillardian knot, where all—including lethal violence—is spectacle and simulation. She writes that there is a distinct geographic remapping that plays out in the interpretation of images in this way, as it:
+In reading that passage I was reminded of Susan Sontag’s book *Regarding the Pain of Others*, in which she tackles the “breathtaking provincialism” of those caught in a Baudrillardian knot, where all—including lethal violence—is spectacle and simulation. She writes that there is a distinct geographic remapping that plays out in the interpretation of images in this way, as it:
 
 > “assumes everyone is a spectator. It suggests that there is no real suffering in the world. But it is absurd to identify the world with those zones in the well-off countries where people have the dubious privilege of becoming spectators, or of declining to be spectators, of other people’s pain.”
 
