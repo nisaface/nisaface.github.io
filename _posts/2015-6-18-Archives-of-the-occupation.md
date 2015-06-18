@@ -4,9 +4,9 @@ title: "More from the Archives of the Korean Occupation"
 category: blog
 ---
 
-<img src="http://crisisofenclosure.com/img/freedom-restored.jpg" width="290" align="right" style="MARGIN: 20px; margin-top: 0px; margin-bottom: 50px;"/>
+<img src="http://crisisofenclosure.com/img/freedom-restored.jpg" width="300" align="right" style="MARGIN: 20px; margin-top: 0px; margin-bottom: 50px;"/>
 
-<img src="http://crisisofenclosure.com/img/pamphlets.jpg" width="290" align="right" style="MARGIN: 20px; margin-top: 0px; margin-bottom: 5px;"/>
+<img src="http://crisisofenclosure.com/img/pamphlets.jpg" width="300" align="right" style="MARGIN: 20px; margin-top: 0px; margin-bottom: 5px;"/>
 
 As I continue to read through the archives of the *New York Times* for some more context about the US Military Government in Korea, I came across these two quite different dispatches regarding the installation of key liberal freedoms on the peninsula.  
 
