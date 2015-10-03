@@ -15,7 +15,7 @@ So, while there are definite limitations to what I came up with (both technologi
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>I should note that I was able to take this course because of the generous help of <a href="http://publicmind.fdu.edu/"><i>The Public Mind</i></a> poll at Fairleigh Dickinson.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>I should note that I was able to take this course because of the generous help of <a href="http://publicmind.fdu.edu/"><i>The Public Mind</i></a> poll at Fairleigh Dickinson University.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
