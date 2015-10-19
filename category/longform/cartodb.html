@@ -16,34 +16,72 @@
   ga('send', 'pageview');
 
 </script>
-
-  <style>
+<style>
   body {background-color:black}
   h1   {color:#E31A1C; font-weight: 400; font-size: 30px; line-height: 10px; padding-left: 20%}
-h2   {color:#888888; font-weight: 100; font-size: 20px; font-style: italic; line-height: 20px; padding-left: 20%}
-p {color: white; font-weight: 100; width: 60%; align-content: left; padding-left: 20%; line-height: 25px}
-h4 {color: #666666; font-weight: 100; width: 60%; align-content: left; padding-left: 20%; line-height: 15px}
-a:link {
+  h2   {color:#888888; font-weight: 100; font-size: 20px; font-style: italic; line-height: 20px; padding-left: 20%}
+  p {color: white; font-weight: 100; width: 60%; align-content: left; padding-left: 20%; line-height: 25px}
+  h3 {color: #ffffff; font-size: 1em; font-weight: 100; line-height: 1px; padding-left: 0%; align-content: left; line-height: 1px}
+  h4 {color: #666666; font-weight: 100; width: 60%; align-content: left; padding-left: 20%; line-height: 15px}
+
+  a:link {
     color: #666666;
 }
-
-a:visited {
+  a:visited {
     color: #666666;
 }
-
-a:hover {
+  a:hover {
     color: #999999;
+}
+  .site-nav {
+    background-color: #000000;
+}
+  .site-nav .container {
+    padding-top: .125em;
+    padding-bottom: .125em;
+    text-decoration: none;
+}
+  .site-nav-list {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+  .site-nav-item {
+    display: inline;
+    text-decoration: none;
+}
+.site-nav-link {
+    border-bottom: none;
+    padding: .5em 1.25em;
+    font-size: .75em;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
   </style>
 </head>
-<br>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="site-nav">
+      <div class="container">
+        <h3>
+        <ul class="site-nav-list">
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com">Blog</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com/category/longform/">Writing</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com/about/">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+<br><br><br>
 <h1>Mapping Adjunct Pay<br></h1><h2>at Colleges and Universities across the U.S.</h2>
 <br>
 <h4><a href="http://crisisofenclosure.com/about/">Richard Nisa</a></h4>
 <h4>Assistant Professor of Geography at Fairleigh Dickinson University</h4>
 <hr width=60% color="#333333" width="1px">
-<p><b><a href="#update">{{ Please See Update }}</a></b></p>
+<br><p><b><a href="#update">{{ Please See Update }}</a></b></p>
 <p>
 This is my first pass at a map exploring the relationships between adjunct instructor pay (taken from the most recent data submitted to the Chronicle of Higher Education’s <i><a href="http://adjunct.chronicle.com/">The Adjunct Project</a></i>) and state minimum wage data:</p>
 
