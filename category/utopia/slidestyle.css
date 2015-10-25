@@ -46,15 +46,11 @@ q:before, q:after {
 /*
  * Global
  */
-@font-face {
-    font-family: "adelle",serif;
-  }
 
 body {
-    font-family: 'adelle', sans-serif;
-    font-size: 70px;
+    font-size: 1em;
     background: black;
-    color: black;
+    color: white;
 }
 
 b, strong { font-weight: bold }
@@ -68,46 +64,86 @@ img {
 }
 
 h1 {
-    font-family: 'adelle', sans-serif;
-    margin-bottom: 25px;
-    font-weight: bold;
+    font-family: "abolition-soft", sans-serif;
+    font-size: 2em;
+    color: black;
+    margin-bottom: .25em;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+h1.light {
+    color: white;
+    line-height: 1em;
 }
 
 h2, h3 {
-    font-family: 'adelle', sans-serif;
-    margin-bottom: 15px;
+    font-family: "adelle", sans-serif;
+    margin-bottom: .2em;
 
 }
 
 p {
-  background-color: #666872;
   color: #FFFFFF;
-  font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: 45px;
-  line-height: 1.5;
-  width: 80%;
-  padding-left: 10px;
+  font-family: "adelle", Georgia, 'Times New Roman', Times, serif;
+  font-size: .7em;
+  line-height: 1.25em;
+  width: 90%;
+  padding-left: .25em;
+  padding-top: .135em;
 }
 
+.dark {
+  color: black;
+}
+
+.highlighted {
+    color: black;
+    background-color: yellow;
+  margin-bottom: .2em;
+}
+
+.lowlighted {
+    color: white;
+    background-color: black;
+      margin-bottom: .2em;
+}
+
+.nolighted {
+    color: yellow;
+      margin-bottom: .2em;
+}
+
+.quote {
+    color: white;
+    font-size: .6em;
+    line-height: 1.35em;
+    background-color: black;
+      margin-bottom: .2em;
+}
+
+
 .sublist {
-  background-color: #666872;
   color: yellow;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: 45px;
-  line-height: 1.5;
-  width: 80%;
-  padding-left: 10px;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  width: 90%;
+  padding-left: .25em;
+  padding-top: .135em;
+  margin-left: -50px;
 }
 
 li {
-  background-color: #666872;
-  color: #FFFFFF;
+  background-color: black;
+  color: #777777;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: 45px;
-  font-style:italic;
-  line-height: 1.5;
-  width: 80%;
-  padding-left: 10px;
+  font-size: .6em;
+  line-height: 1.25em;
+  width: 90%;
+  padding-left: .25em;
+  padding-top: .135em;
   margin-left: 100px;
   list-style-type: none;
 
@@ -117,18 +153,17 @@ li {
 
 a.source {
     float: right;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
     margin-top: 25px;
+    padding-right: 7px;
+    padding-left: 7px;
     position: absolute;
     bottom: 25px;
     right: 25px;
 }
 
-.highlighted {
-    color: black;
-    background-color: yellow;
-}
+
 
 
 /*
