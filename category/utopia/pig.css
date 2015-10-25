@@ -11,11 +11,11 @@ h1, h2, h3, p { margin:0; }
 
 em, a {
   font-style:normal;
-  color:#ff1759;
+  color:yellow;
 }
 
 a {
-  background: #ff1759;
+  background: grey;
   color:#000;
   text-decoration:none;
 }

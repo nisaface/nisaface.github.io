@@ -77,6 +77,8 @@ h1.light {
     line-height: 1em;
 }
 
+
+
 h2, h3 {
     font-family: "adelle", sans-serif;
     margin-bottom: .2em;
@@ -122,7 +124,6 @@ p {
       margin-bottom: .2em;
 }
 
-
 .sublist {
   color: yellow;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
@@ -166,6 +167,82 @@ a.source {
 
 
 
+/* Media Queries
+========================================================================== */
+
+
+@media only screen and (min-width: 100px){
+  h1 {
+           font-size: .75em;
+         }
+  p {
+      font-size: .3em;
+  }
+  li {
+      font-size: .3em;
+      padding-left: .0015em;
+      margin-left: 2em;
+      padding-top: .135em;
+      width: 90%;
+  }
+  .sublist {
+      font-size: 3em;
+      margin-left: 1em;
+      padding-top: .135em;
+      width: 90%;
+  }
+  .quote {
+      font-size: .25em;
+      line-height: 1.35em;
+      }
+
+}
+
+
+@media only screen and (min-width: 500px){
+  h1 {
+           font-size: 1em;
+         }
+  p {
+      font-size: .5em;
+  }
+  li {
+      font-size: .5em;
+      padding-left: .0015em;
+      margin-left: 2em;
+      padding-top: .135em;
+      width: 90%;
+  }
+  .sublist {
+      font-size: 2em;
+      margin-left: 1em;
+      padding-top: .135em;
+      width: 90%;
+  }
+  .quote {
+      font-size: .35em;
+      line-height: 1.35em;
+      }
+
+}
+
+
+@media only screen and (min-width: 750px){
+  h1 {
+           font-size: 2em;
+         }
+
+  p {
+             font-size: .7em;
+         }
+
+  .quote {
+             font-size: .6em;
+             line-height: 1.35em;
+}
+}
+
+
 /*
  * Pig overrides
  */
@@ -180,91 +257,4 @@ div.slide {
     padding: 5%;
     position: relative;
     width: 100%;
-}
-
-a {
-    background: #000000;
-    font-family: 'adelle';
-    color: white;
-}
-
-h2 a {
-  background: #000000;
-  font-family: 'adelle'; color: white;
-
-li {
-    font-size: 70px;
-    margin-left: 100px;
-}
-
-.readable-text {
-    background-color: hsla(0, 0%, 0%, 0.5);
-    padding: 20px;
-}
-
-
-/*
- * Slide types
- */
-
-.slide.dark-background {
-    color: white;
-}
-
-.slide h1 {
-    font-size: 150px;
-    font-weight: bold;
-    line-height: 175px;
-
-}
-
-.slide h2 {
-    font-size: 125px;
-    line-height: 150px;
-}
-
-.slide h3 {
-    font-size: 115px;
-    line-height: 130px;
-}
-
-.slide {
-    font-size: 70px;
-    line-height: 100px;
-    position: relative;
-}
-
-.slide.intermission:after {
-    content: "âˆŽ";
-}
-
-
-/*
- * Other styles
- */
-
-
-.hidden-text {
-    opacity: 0;
-}
-
-.quote {
-    padding: 50px;
-}
-
-.left, .right {
-    float: left;
-}
-
-.right {
-    padding-left: 30px;
-}
-
-pre {
-    font-size: 55px;
-    line-height: 60px;
-}
-
-code {
-    font-family: Courier, mono;
 }
