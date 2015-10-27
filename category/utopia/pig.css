@@ -32,3 +32,15 @@ div.slide {
   overflow:hidden;
   background-size:100%;
 }
+
+div.slidewhite {
+  padding:10%;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  cursor:pointer;
+  cursor:hand;
+  font-size:40px;
+  overflow:hidden;
+  background-size:100%;
+  background-color: white;
+}

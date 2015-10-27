@@ -67,17 +67,27 @@ h1 {
     font-family: "abolition-soft", sans-serif;
     font-size: 2em;
     color: black;
+    background-color: white;
     margin-bottom: .25em;
     vertical-align: middle;
     line-height: 1em;
+    width: 85%;
+    padding-left: .1em;
 }
 
 h1.light {
     color: white;
+    background-color: black;
     line-height: 1em;
+    width: 85%;
 }
 
-
+h1.free {
+    color: black;
+    background-color: transparent;
+    line-height: 1em;
+    width: 85%;
+}
 
 h2, h3 {
     font-family: "adelle", sans-serif;
@@ -90,7 +100,7 @@ p {
   font-family: "adelle", Georgia, 'Times New Roman', Times, serif;
   font-size: .7em;
   line-height: 1.25em;
-  width: 90%;
+  width: 85%;
   padding-left: .25em;
   padding-top: .135em;
 }
@@ -116,11 +126,18 @@ p {
       margin-bottom: .2em;
 }
 
+.blacklighted {
+    color: black;
+    background-color: none;
+      margin-bottom: .2em;
+}
+
 .quote {
     color: white;
     font-size: .6em;
     line-height: 1.35em;
     background-color: black;
+      padding-right: .25em;
       margin-bottom: .2em;
 }
 
@@ -130,7 +147,7 @@ p {
   font-style: italic;
   font-size: 1.25em;
   line-height: 1.25em;
-  width: 90%;
+  width:75%;
   padding-left: .25em;
   padding-top: .135em;
   margin-left: -50px;
@@ -140,9 +157,9 @@ li {
   background-color: black;
   color: #777777;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: .6em;
+  font-size: .75em;
   line-height: 1.25em;
-  width: 90%;
+  width: 75%;
   padding-left: .25em;
   padding-top: .135em;
   margin-left: 100px;
@@ -150,20 +167,19 @@ li {
 
 }
 
-
-
 a.source {
     float: right;
+    font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     line-height: 20px;
     margin-top: 25px;
     padding-right: 7px;
     padding-left: 7px;
+    padding-top: 4px;
     position: absolute;
     bottom: 25px;
     right: 25px;
 }
-
 
 
 
@@ -173,18 +189,24 @@ a.source {
 
 @media only screen and (min-width: 100px){
   h1 {
-           font-size: .75em;
+      font-size: .75em;
          }
   p {
       font-size: .3em;
+
   }
   li {
       font-size: .3em;
-      padding-left: .0015em;
+      padding-left: 1em;
       margin-left: 2em;
       padding-top: .135em;
       width: 90%;
+
   }
+
+  img { display: none; }
+
+
   .sublist {
       font-size: 3em;
       margin-left: 1em;
@@ -196,7 +218,7 @@ a.source {
       line-height: 1.35em;
       }
 
-}
+
 
 
 @media only screen and (min-width: 500px){
@@ -213,6 +235,7 @@ a.source {
       padding-top: .135em;
       width: 90%;
   }
+
   .sublist {
       font-size: 2em;
       margin-left: 1em;
@@ -236,6 +259,13 @@ a.source {
              font-size: .7em;
          }
 
+         li {
+             font-size: .5em;
+             padding-left: .0015em;
+             margin-left: 2em;
+             padding-top: .135em;
+             width: 70%;
+         }
   .quote {
              font-size: .6em;
              line-height: 1.35em;
