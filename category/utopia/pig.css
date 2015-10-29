@@ -28,7 +28,6 @@ div.slide {
   -moz-box-sizing:border-box;
   cursor:pointer;
   cursor:hand;
-  font-size:40px;
   overflow:hidden;
   background-size:100%;
 }

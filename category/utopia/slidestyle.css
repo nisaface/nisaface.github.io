@@ -48,7 +48,7 @@ q:before, q:after {
  */
 
 body {
-    font-size: 1em;
+    font-size: .75em;
     background: black;
     color: white;
 }
@@ -65,7 +65,7 @@ img {
 
 h1 {
     font-family: "abolition-soft", sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
     color: black;
     background-color: white;
     margin-bottom: .25em;
@@ -77,6 +77,7 @@ h1 {
 
 h1.light {
     color: white;
+    font-size: 1.25em;
     background-color: black;
     line-height: 1em;
     width: 85%;
@@ -96,9 +97,9 @@ h2, h3 {
 }
 
 p {
-  color: #FFFFFF;
+  color: #black;
   font-family: "adelle", Georgia, 'Times New Roman', Times, serif;
-  font-size: .7em;
+  font-size: .5em;
   line-height: 1.25em;
   width: 85%;
   padding-left: .25em;
@@ -107,34 +108,46 @@ p {
 
 .dark {
   color: black;
+    font-size: .5em;
 }
 
 .highlighted {
     color: black;
+      font-size: .5em;
     background-color: yellow;
   margin-bottom: .2em;
 }
 
 .lowlighted {
     color: white;
+      font-size: .5em;
+    background-color: black;
+      margin-bottom: .2em;
+}
+
+.lowlightsmall {
+    color: white;
+      font-size: .4em;
     background-color: black;
       margin-bottom: .2em;
 }
 
 .nolighted {
     color: yellow;
+      font-size: .5em;
       margin-bottom: .2em;
 }
 
 .blacklighted {
     color: black;
+      font-size: .5em;
     background-color: none;
       margin-bottom: .2em;
 }
 
 .quote {
     color: white;
-    font-size: .6em;
+    font-size: .25em;
     line-height: 1.35em;
     background-color: black;
       padding-right: .25em;
@@ -145,7 +158,7 @@ p {
   color: yellow;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
-  font-size: 1.25em;
+  font-size: .5em;
   line-height: 1.25em;
   width:75%;
   padding-left: .25em;
@@ -155,9 +168,9 @@ p {
 
 li {
   background-color: black;
-  color: #777777;
+  color: #999999;
   font-family: 'adelle', Georgia, 'Times New Roman', Times, serif;
-  font-size: .75em;
+  font-size: .5em;
   line-height: 1.25em;
   width: 75%;
   padding-left: .25em;
