@@ -886,6 +886,8 @@ border-bottom {
 ========================================================================== */
 @media only screen and (min-width: 30em){
 
+
+
   .site-title {
     display: inline-block;
     margin-top: .5em;
@@ -902,6 +904,7 @@ border-bottom {
     width: 20%;
     max-width: 6.25em;
   }
+
 }
 
 @media only screen and (min-width: 37em){
@@ -982,4 +985,12 @@ border-bottom {
     width: 25%;
     border: none;
   }*/
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
 }
