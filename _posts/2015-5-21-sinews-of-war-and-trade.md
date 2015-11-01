@@ -9,3 +9,5 @@ category: blog
 <div class="post-content-video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmnwdbW2NIM?list=PL1z_PGhPjwcpF1Bjah2zW5UsmL71PhKP6" frameborder="0" allowfullscreen=""></iframe>
 </div>
+
+Right?
