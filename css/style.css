@@ -520,7 +520,6 @@ h6 {
 
 h1 {
   font-size: 1.5em;
-    font-weight: bold;
 }
 
 h2 {
@@ -663,8 +662,6 @@ border-bottom {
   max-width: 65em;
   margin: auto;
 }
-
-
 
 /* Header
    ========================================================================== */
@@ -841,6 +838,7 @@ border-bottom {
   color: red;
 }
 
+
 .post-content-video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -1014,7 +1012,7 @@ border-bottom {
     width: 90%;
   }
 
+
   .post-content-video-container {
       margin-right: 2%;
-
 }
