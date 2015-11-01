@@ -27,4 +27,6 @@ Perhaps, in the end, the migration and transformation of these practices is more
 
 Ackerman was recently on *Democracy Now!* discussing these reports:
 
-<iframe width="560" height="315" src="http://www.democracynow.org/embed/story/2015/2/26/exporting_torture_former_chicago_police_detective" frameborder="0" allowfullscreen="true"></iframe>
+<div class="post-content-video-container">
+<iframe width="560" height="315" src="http://www.democracynow.org/embed/story/2015/2/26/exporting_torture_former_chicago_police_detective" frameborder="0" allowfullscreen=""></iframe>
+</div>
