@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You don't believe data...
+title: You don't believe data
 category: blog
 ---
 
