@@ -43,4 +43,4 @@ The biggest bummer about the whole downtown area is that the street level functi
 <cite>Some beton brut draped in winter vines</cite>
 
 
-The drawing posted here are taken from [here](http://www.frac-centre.fr/collection-art-architecture/gailhoustet-renee/le-liegat-ivry-sur-seine-64.html?authID=74&ensembleID=854).
+The drawing posted above are taken from [here](http://www.frac-centre.fr/collection-art-architecture/gailhoustet-renee/le-liegat-ivry-sur-seine-64.html?authID=74&ensembleID=854).
