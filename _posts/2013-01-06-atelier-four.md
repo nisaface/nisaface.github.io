@@ -5,7 +5,7 @@ category: blog
 ---
 
 
-We've been camped out in our temporary home in *les banlieues* of Paris (and in our particular case, abanlieue rouge) for about a week. I've been sick the entire time we've been here. But the BNF has finally opened its doors to both N and the new year, and I am slowly but surely finding my health enough to manage life as a dad again. Today while the wee one (who has also been sick) was having *un petit sommeil* I started doing some investigating about the apartment we've been living in. When I saw the window details of the building I knew that the place we were staying in would classify as 'Capital M-Capital-A' Modern Architecture, but I had no idea just how important this group of buildings and their architects were to late French modernism until I did some digging.
+We've been camped out in our temporary home in *les banlieues* of Paris (and in our particular case, a banlieue rouge) for about a week. I've been sick the entire time we've been here. But the BNF has finally opened its doors to both N and the new year, and I am slowly but surely finding my health enough to manage life as a dad again. Today while the wee one (who has also been sick) was having *un petit sommeil* I started doing some investigating about the apartment we've been living in. When I saw the window details of the building I knew that the place we were staying in would classify as 'Capital M-Capital-A' Modern Architecture, but I had no idea just how important this group of buildings and their architects were to late French modernism until I did some digging.
 
 ![Blue Windows](/img/windows.jpg)
 
