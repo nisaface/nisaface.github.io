@@ -935,7 +935,7 @@ border-bottom {
   }
 }
 
-@media only screen and (min-width: 42em){
+@media only screen and (min-width: 50em){
   .site-title,
   .site-description,
   .site-nav-list,
