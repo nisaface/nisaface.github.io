@@ -4,6 +4,12 @@ title: "Death in the Browser Tab and Regarding the Pain of Others"
 category: blog
 ---
 
+**There seems to be a lot of interest in this particular post out in California--I'd love to hear more...**
+
+**Thanks for reading!**
+
+**Email me at nisa [at] fdu [dot] edu**
+
 I just read Teju Cole’s [characteristically beautiful](http://www.nytimes.com/2015/05/24/magazine/death-in-the-browser-tab.html?_r=2) meditation on the nature of mediation and death. In discussing Eddie Adams’ iconic photograph of Nguyen Ngoc Loan fatally shooting Nguyen Van Lem, Cole writes:
 
 > “But when you see death mediated in this way, pinned down with such dramatic flair, the star is likely to be death itself and not the human who dies.”
