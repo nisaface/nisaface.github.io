@@ -17,4 +17,4 @@ The book is animated largely by the relationships not between places (as it woul
 
 I could have done without the *And That's How Everything Works Out In the End For Harry Potter* chapters at the book's conclusion, but it was a great book that will likely yield another read in the (*a?...my?*) not-too-distant-as-to-be-unrecognizable future.
 
-<cite>See also: A blog post about Gibson's [Jackpot](/Jackpot/) and the age of man.</cite>
+<cite>See also: A blog post about Gibson's [Jackpot](/Jackpot) and the age of man.</cite>
