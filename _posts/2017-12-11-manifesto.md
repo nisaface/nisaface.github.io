@@ -5,12 +5,13 @@ category: teaching
 subtitle: "Geography 2700 - Fall 2017"
 ---
 
->At the end of our last classroom meeting, the students in Environmental Geography worked in small groups to imagine a future in which our lives are not beholden to the extraction and incineration of eons-old subterranean hydrocarbons.   
+At the end of our last classroom meeting, the students in Environmental Geography worked in small groups to imagine a future in which our lives are not beholden to the extraction and incineration of eons-old subterranean hydrocarbons.   
 
->Informed by a semester-long exploration into the histories of our shared present, and banged out in a day, this is our draft manifesto for a more sustainable future. I have to say, I'm pretty proud of these kids:
+Informed by a semester-long exploration into the histories of our shared present, and banged out in a day, this is our draft manifesto for a more sustainable future. I have to say, I'm pretty proud of these kids:
 
 <!-- more -->
 
+***
 To achieve a carbon-neutral future, we cannot continue to divorce ourselves from the global and historical flows of energy and capital that impact the lives of people all over the world. In imagining a more sustainable future, rather than reinforce this perceived isolation, we must collaborate with those who have been most impacted by the current regimes of extraction and exchange that make our world.
 
 Hegemonic nations like the United States often utilize indigenous and third world peoples’ resources for their own development at the expense of local populations and their environments. This is not a true form of democracy, as it does not engage with a plurality of the world’s underrepresented voices. In imagining the policies that will reshape the globe, we must resist this unipolar world vision, and listen to and learn from an expanded field of global constituents.
