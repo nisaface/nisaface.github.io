@@ -2,7 +2,7 @@
 layout: post
 title: "Manifesto for a Sustainable Future"
 category: teaching
-subtitle: "Geography 2700 - Fall 2017"
+
 ---
 
 At the end of our last classroom meeting, the students in Environmental Geography worked in small groups to imagine a future in which our lives are not beholden to the extraction and incineration of eons-old subterranean hydrocarbons.   
