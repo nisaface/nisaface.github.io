@@ -28,6 +28,9 @@ Rather than occurring primarily in cities like New York and Paris, most urban ch
 
 <br>
 
+<iframe width="100%" height="400" frameborder="0" src="https://rnisa.carto.com/viz/a5469e3e-6e2c-11e6-a254-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
 #### COURSE OUTLINE
 
 **Introductions: Why Cities?**
