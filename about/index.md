@@ -7,7 +7,7 @@ category: about
 
 To access the most recent iteration of my CV, click [here](https://fdu.academia.edu/RichardNisa/CurriculumVitae).
 
-I am an [Assistant Professor](http://view.fdu.edu/default.aspx?id=9367) of Geography at Fairleigh Dickinson University's Florham Campus. My days are passed fumbling through the challenges of new(ish)-fatherhood, teaching, and researching and writing on a host of issues at the interface between geography, history, and architecture. My general academic interests revolve around military detention, discourses of security, the human body, and media practices.
+I am an [Associate Professor](http://view.fdu.edu/default.aspx?id=9367) of Geography at Fairleigh Dickinson University's Florham Campus. My days are passed fumbling through the challenges of fatherhood, teaching, and researching and writing on a host of issues at the interface between geography, history, and architecture. My general academic interests revolve around military detention, discourses of security, the human body, and media practices.
 
 This website would not have come into existence without a good deal of coding help from my friends Josh and [Mandy](http://www.aworkinglibrary.com). They are amazing. Anything on this site that looks bad or functions poorly is solely my doing.
 
