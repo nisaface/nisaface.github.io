@@ -19,10 +19,10 @@
       <nav class="site-nav">
         <div class="container">
           <ul class="site-nav-list">
-            <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'blog' or page.type == 'blog' or page.title == 'Home' %} is-active{% endif %}" href="{{ site.url }}">Blog</a></li>
+            
             <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'longform' or page.type == 'longform' %} is-active{% endif %}" href="{{ site.url }}/category/longform/">Writing</a></li>
             <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'teaching' or page.type == 'teaching' %} is-active{% endif %}" href="{{ site.url }}/category/teaching/">Teaching</a></li>
-            
+
             <li class="site-nav-item"><a class="site-nav-link {% if page.category == 'mapping' or page.type == 'mapping' %} is-active{% endif %}" href="{{ site.url }}/category/mapping/">Mapping</a></li>
             <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'about' %} is-active{% endif %}" href="{{ site.url }}/about/">About</a></li>
           </ul>
