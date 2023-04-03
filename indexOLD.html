@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in paginator.posts %}
+
+  {% if post.image %}
+    {% if post.image contains 'http' %}
+      {% assign imageurl = post.image %}
+    {% else%}
+      {% capture imageurl %}{{site.baseurl}}/img/{{ post.image}}{% endcapture %}
+    {% endif %}
+  {% endif %}
+
+  <article class="post {% if post.category %}{{ post.category }}{% endif %} listing">
+    <header class="post-header">
+      <span class="post-meta"><time class="post-date">{{ post.date | | date: "%-d %B %Y" }}</time></span>
+
+      {% if post.image %}<img class="post-image" src="{{ imageurl }}">{% endif %}
+      <h2 class="post-title">{% if post.category == 'reading'%}<em>{% endif %}<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% if post.category == 'reading'%}</em>{% endif %}</h2>
+      {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
+    </header>
+    <div class="post-content">
+      {% assign content = post.content | split: '<!-- more -->' %}
+      {{ content[0] }}
+      {% if content[1] %}<a href="{{ site.url }}{{ post.url }}">Read More</a>{% endif %}
+    </div>
+  </article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+  <nav class="pagination container" align="center">
+    {% if paginator.next_page %}
+      <a class="pagination-link older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+      |<a class="pagination-link newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newer Posts</a>
+    {% endif %}
+
+  </nav>
+{% endif %}
