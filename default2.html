@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ site.owner.name }}">
-    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
-    <script src="https://use.typekit.net/ula2hby.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title> About | A Crisis of Enclosure</title>
+  <link rel="shortcut icon" href="http://crisisofenclosure.com/favicon.ico">
+  <meta name="description" content="ruminations on the nondescript catastrophe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Richard Nisa">
+  <link rel="stylesheet" href="http://crisisofenclosure.com/css/style.css">
+  <script src="https://use.typekit.net/ula2hby.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
 
-  </head>
-  <body>
+  <header class="site-header" role="banner">
+    <nav class="site-nav">
+      <div class="container">
+        <ul class="site-nav-list">
+            <li class="site-nav-item"><a class="site-nav-link is-active" href="http://crisisofenclosure.com/about/">About</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com/category/longform/">Writing</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com/category/teaching/">Teaching</a></li>
+          <li class="site-nav-item"><a class="site-nav-link" href="http://crisisofenclosure.com/category/mapping/">Making</a></li>
 
-    <header class="site-header" role="banner">
-      <nav class="site-nav">
-        <div class="container">
-          <ul class="site-nav-list">
-            <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'about' %} is-active{% endif %}" href="{{ site.url }}/about/">About</a></li>
-            <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'longform' or page.type == 'longform' %} is-active{% endif %}" href="{{ site.url }}/category/longform/">Writing</a></li>
-            <li class="site-nav-item"><a class="site-nav-link{% if page.category == 'teaching' or page.type == 'teaching' %} is-active{% endif %}" href="{{ site.url }}/category/teaching/">Teaching</a></li>
-
-            <li class="site-nav-item"><a class="site-nav-link {% if page.category == 'making' or page.type == 'making' %} is-active{% endif %}" href="{{ site.url }}/category/mapping/">Making</a></li>
-
-          </ul>
-        </div>
-      </nav>
+        </ul>
+      </div>
+    </nav>
 
           <div class="container">
             <a class="site-title" href="http://crisisofenclosure.com">A Crisis of Enclosure</a>
