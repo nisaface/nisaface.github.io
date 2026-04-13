@@ -452,10 +452,6 @@ a:hover {
   color: #529edc;
 }
 
-/*abbr*/
-/*address*/
-/*b*/
-
 cite {
   border: none;
   display: block;
@@ -464,8 +460,7 @@ cite {
   margin-top: .5em;
   font-size: .875em;
   color: #39B54A;
-
-  }
+}
 
 .footnotes {
     border: none;
@@ -496,15 +491,6 @@ code {
   padding: .25em .5em;
   font-style: normal;
 }
-
-/*del*/
-/*dfn*/
-
-/*dl*/
-/*dt*/
-/*dd*/
-
-/*em*/
 
 h1,
 h2,
@@ -562,12 +548,6 @@ hr {
   margin: 1.5em 0;
 }
 
-/*i*/
-/*ins*/
-/*kbd*/
-
-/*mark*/
-
 ol {
   list-style-type: decimal;
   margin-bottom: 1em;
@@ -587,10 +567,6 @@ pre code {
   padding: 0;
   background-color: transparent;
 }
-
-/*q*/
-/*s*/
-/*samp*/
 
 /*small*/
 
@@ -621,24 +597,9 @@ ol ul {
 
 /*var*/
 
-/*::-moz-selection {
-  text-shadow: none;
-}
-
-::selection {
-  text-shadow: none;
-}*/
-
 img,
 figure {
   max-width: 100%;
-}
-
-border-bottom {
-  width: 300px;
-  padding: 25px;
-  border: 25px solid navy;
-  margin: 25px;
 }
 
 /* ==========================================================================
@@ -973,14 +934,6 @@ border-bottom {
     max-width: 1000px;
     margin-left: -33%;
   }
-
-  /*blockquote cite {
-    color: green;
-    margin-left: -33%;
-    width: 25%;
-    float: left;
-    border: none;
-  }*/
 }
 
 @media only screen and (min-width: 55em){
@@ -998,13 +951,6 @@ border-bottom {
     width: 150%;
     margin-left: -50%;
   }
-
-  /*blockquote cite {
-    color: green;
-    margin-left: -50%;
-    width: 25%;
-    border: none;
-  }*/
 }
 
 @media screen and (max-width: 400px) {
