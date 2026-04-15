@@ -294,7 +294,7 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  appearance: button; /* 2 */
   cursor: pointer; /* 3 */
 }
 
@@ -358,7 +358,7 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
@@ -670,10 +670,6 @@ figure {
   text-align: center;
 }
 
-.site-nav-item {
-  /*display: inline;*/
-}
-
 .site-nav-link {
   border-bottom: none;
   padding: .5em 1.25em;
@@ -745,6 +741,16 @@ figure {
   border-color: #F0F0F0;
 }
 
+.post-subtitle-book {
+  font-size: 1em;
+  max-width: 50em;
+  margin: .125em auto;
+  font-weight: normal;
+  font-style: italic;
+  color: #529edc;
+  padding-bottom: .5em;
+  
+}
 
 .post-meta {
   display: block;
@@ -763,10 +769,6 @@ figure {
   font-style: italic;
   color: #ffffff;
   border-bottom: none;
-}
-
-.post-image {
-
 }
 
 .post-content {
@@ -833,24 +835,7 @@ figure {
   list-style-type: none;
 }
 
-/* List of Posts Styles */
 
-.listing {
-
-}
-
-/* "blog" Category Specific Styles */
-
-.blog {
-
-}
-
-/* "reading" Category Specific Styles */
-
-.reading .post-image,
-.teaching .post-image {
-
-}
 
 /* Site Footer
 ========================================================================== */
@@ -963,4 +948,5 @@ figure {
 
   .post-content-video-container {
       margin-right: 2%;
+  }
 }
