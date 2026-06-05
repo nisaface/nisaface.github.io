@@ -1,0 +1,558 @@
+/* ── Shared typography variables ─────────────────────────────── */
+:root {
+  --nav-height: 75px;
+  --content-padding: 40px;
+  --text-max: 600px;
+  --note-width: 250px;
+  --color-accent: #ef8354;
+  --color-text: #1a1a1a;
+  --font-serif: "ff-tisa-web-pro", "Georgia", serif;
+  --font-display: "neue-haas-grotesk-display", sans-serif;
+  --font-text: "neue-haas-grotesk-text", sans-serif;
+}
+
+/* ── White bars ──────────────────────────────────────────────── */
+#white-bar,
+#white-bar-2 {
+  background: #ffffff;
+}
+
+/* ── Shared section styles ───────────────────────────────────── */
+#intro,
+#body {
+  padding: 80px var(--content-padding) 0;
+}
+
+#body {
+  padding-bottom: 60px;
+}
+
+#intro h1,
+#body h1 {
+  font-size: clamp(1.45rem, 1.6vw, 1.8rem);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+  max-width: var(--text-max);
+  margin: 0 auto 0.75em;
+}
+
+#intro p,
+#body p {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: var(--font-serif);
+  color: var(--color-text);
+  max-width: var(--text-max);
+  margin: 0 auto 1em;
+}
+
+/* ── Special text spans ──────────────────────────────────────── */
+.chapter-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  color: #4f5d75;
+}
+
+.first-three {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.footnote-mark {
+  color: var(--color-accent);
+  font-size: 0.75em;
+  vertical-align: super;
+  font-style: normal;
+  margin-left: 1px;
+}
+
+/* ── Marginal notes ──────────────────────────────────────────── */
+.marginal {
+  position: relative;
+  max-width: var(--text-max);
+  margin: 0 auto;
+}
+
+.marginal-note {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 24px);
+  width: var(--note-width);
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.marginal-note.left {
+  left: auto;
+  right: calc(100% + 24px);
+  text-align: right;
+}
+
+/* ── Image + note side by side ───────────────────────────────── */
+.marginal-wide {
+  position: relative;
+}
+
+.marginal-wide figure {
+  position: static;
+}
+
+.marginal-wide .marginal-note {
+  position: absolute;
+  bottom: 0;
+  left: 885px;
+  width: var(--note-width);
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.marginal-wide .marginal-note.left {
+  right: 16px;
+  left: auto;
+  text-align: left;
+}
+
+/* ── Images ──────────────────────────────────────────────────── */
+.fig {
+  margin: 2em 0;
+}
+
+.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fig-full {
+  margin-left: calc(-1 * var(--content-padding));
+  margin-right: calc(-1 * var(--content-padding));
+}
+
+.fig-left {
+  margin-left: calc(-1 * var(--content-padding));
+  margin-right: auto;
+  width: 895px;
+  max-width: calc(100% + var(--content-padding));
+}
+
+.fig-right {
+  margin-left: auto;
+  margin-right: calc(-1 * var(--content-padding));
+  width: 895px;
+  max-width: calc(100% + var(--content-padding));
+}
+
+.fig-right.fig-sm,
+.fig-right.fig-md {
+  float: right;
+  margin-left: 24px; /* gap between image and text */
+  margin-bottom: 16px;
+  margin-right: calc(-1 * var(--content-padding));
+  width: 200px;
+}
+
+.fig-right.fig-md {
+  width: 400px;
+}
+
+.fig-center {
+  max-width: var(--text-max);
+  margin: 0 auto;
+}
+
+/* the hero fade stuff */
+
+#chapter-hero {
+  position: sticky;
+  top: var(--nav-height);
+  width: 100%;
+  max-width: 100%;
+  height: calc(100vh - var(--nav-height));
+  overflow: hidden;
+  z-index: 0;
+}
+
+#chapter-hero img {
+  width: calc(80% - -500px);
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+#hero-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.7) 70%,
+    #ffffff 100%
+  );
+  pointer-events: none;
+}
+
+#white-bar-fade {
+  position: relative;
+  background: white;
+  z-index: 1;
+  margin-top: -10vh;
+  box-shadow: 0 -50px 80px 100px #ffffff;
+}
+
+/* ── Scrolly ─────────────────────────────────────────────────── */
+#scrolly-wrapper {
+  background: #c5c5c9;
+}
+
+#scrolly {
+  position: relative;
+  width: 100%;
+}
+
+#sticky-map {
+  position: sticky;
+  top: var(--nav-height);
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  z-index: 0;
+}
+
+#map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#map-overlay-image,
+#map-overlay-image-2 {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #dfdede;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.overlay-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 11px;
+  font-family: sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+}
+
+/* ── Ssscrolly Steps ───────────────────────────────────────────────────── */
+#steps {
+  position: relative;
+  z-index: 10;
+  width: 45%;
+  margin-left: auto;
+  margin-top: -110vh;
+  padding: 0 32px 100vh;
+  pointer-events: none;
+}
+
+.step {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.step-inner {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  padding: 24px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.step-inner h2 {
+  font-size: 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7e7d7d;
+  margin-bottom: 10px;
+}
+
+.step-inner h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.3;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.step-inner p {
+  font-size: 1rem;
+  font-family: var(--font-serif);
+  line-height: 1.7;
+  color: #444;
+}
+
+.step-note {
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--color-accent);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(239, 131, 84, 0.3);
+}
+
+.step-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ── Progress dots ───────────────────────────────────────────── */
+#progress {
+  position: fixed;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 100;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 1px solid #999;
+  transition: background 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-dot::before {
+  content: attr(data-label);
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
+  white-space: nowrap;
+  padding: 3px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.progress-dot:hover::before {
+  opacity: 1;
+}
+.progress-dot.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ── MapLibre stuff to keep the map and the scroll co-functional ──────────────────────────────────────── */
+.maplibregl-ctrl-attrib {
+  font-size: 9px !important;
+}
+
+.maplibregl-popup-content {
+  font-family: sans-serif;
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.maplibregl-popup-tip,
+.maplibregl-popup-close-button {
+  display: none;
+}
+
+.maplibregl-cooperative-gesture-screen {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0 0 60px;
+}
+
+.maplibregl-cooperative-gesture-screen p {
+  font-family: var(--font-serif) !important;
+  font-size: 9px !important;
+  padding: 4px 8px !important;
+  background: transparent !important;
+  color: var(--color-accent) !important;
+  max-width: 200px !important;
+}
+
+/* ── Tablet ──────────────────────────────────────────────────── */
+@media (min-width: 901px) and (max-width: 1100px) {
+  #intro,
+  #body {
+    padding: 60px 20px 40px;
+    --content-padding: 20px;
+  }
+
+  #body {
+    padding-bottom: 40px;
+  }
+
+  #steps {
+    width: 50%;
+    padding: 0 20px 80vh;
+  }
+}
+
+/* ── Collapse marginal notes ─────────────────────────────────── */
+@media (max-width: 1250px) {
+  .marginal-note {
+    position: static;
+    display: block;
+    width: min(var(--text-max), 100%);
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid rgba(239, 131, 84, 0.3);
+  }
+
+  .marginal-wide .marginal-note {
+    position: static;
+    display: block;
+    width: min(var(--text-max), 100%);
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(239, 131, 84, 0.3);
+    text-align: left;
+  }
+}
+
+/* ── Mobile portrait ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  #intro {
+    padding: 40px 16px 32px;
+    --content-padding: 16px;
+  }
+
+  #body {
+    padding: 40px 16px 60px;
+    --content-padding: 16px;
+  }
+
+  #sticky-map {
+    height: calc(100vh - var(--nav-height));
+    min-height: unset;
+    max-height: unset;
+  }
+
+  #steps {
+    width: 100%;
+    padding: 0 16px 80vh;
+    margin-top: calc(-100vh + var(--nav-height));
+  }
+
+  .step {
+    min-height: 180vh;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+
+  .step-inner {
+    width: clamp(280px, 92%, 600px);
+    background: rgba(255, 255, 255, 0.93);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .fig-left,
+  .fig-right,
+  .fig-center {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fig-full {
+    margin-left: calc(-1 * var(--content-padding));
+    margin-right: calc(-1 * var(--content-padding));
+  }
+
+  .marginal-wide .marginal-note {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #progress {
+    display: none;
+  }
+}
+
+/* ── Mobile landscape ────────────────────────────────────────── */
+@media (max-width: 900px) and (orientation: landscape) {
+  #scrolly {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #steps {
+    width: 50%;
+    padding: 0 16px 80vh;
+    margin-top: calc(-100vh + 52px);
+    margin-left: auto;
+  }
+
+  .step {
+    min-height: 110vh;
+    padding: 20px 0;
+  }
+
+  .step-inner {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  #progress {
+    display: flex;
+  }
+}

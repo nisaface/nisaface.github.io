@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "epw-branch-camps",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Chogu-ri", "Name_1": "No. 1a", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Lat": 34.812871, "Lon": 128.664412 }, "geometry": { "type": "Point", "coordinates": [ 128.664412, 34.812871 ] } },
+{ "type": "Feature", "properties": { "Name": "Yoncho-do", "Name_1": "No. 1b", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Lat": 34.727924, "Lon": 128.461377 }, "geometry": { "type": "Point", "coordinates": [ 128.461377, 34.727924 ] } },
+{ "type": "Feature", "properties": { "Name": "Pongam-do", "Name_1": "No. 1c", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Lat": 34.64799, "Lon": 128.354616 }, "geometry": { "type": "Point", "coordinates": [ 128.354616, 34.64799 ] } },
+{ "type": "Feature", "properties": { "Name": "Taegu", "Name_1": "No. 4a", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Lat": 35.773112, "Lon": 128.50656 }, "geometry": { "type": "Point", "coordinates": [ 128.50656, 35.773112 ] } }
+]
+}

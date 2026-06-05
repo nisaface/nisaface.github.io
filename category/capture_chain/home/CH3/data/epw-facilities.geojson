@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "epw-facilities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Koje-do", "Name_1": "No. 1", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 34.964094, "Lon": 128.603076 }, "geometry": { "type": "Point", "coordinates": [ 128.603076, 34.964094 ] } },
+{ "type": "Feature", "properties": { "Name": "Pusan Hospital", "Name_1": "No. 2", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 35.215068, "Lon": 129.096736 }, "geometry": { "type": "Point", "coordinates": [ 129.096736, 35.215068 ] } },
+{ "type": "Feature", "properties": { "Name": "Mosulp'o", "Name_1": "No. 3", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 33.265727, "Lon": 126.338963 }, "geometry": { "type": "Point", "coordinates": [ 126.338963, 33.265727 ] } },
+{ "type": "Feature", "properties": { "Name": "Yongchun", "Name_1": "No. 4", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 36.043055, "Lon": 128.927544 }, "geometry": { "type": "Point", "coordinates": [ 128.927544, 36.043055 ] } },
+{ "type": "Feature", "properties": { "Name": "Sang Mudai", "Name_1": "No. 5", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 35.153495, "Lon": 126.818845 }, "geometry": { "type": "Point", "coordinates": [ 126.818845, 35.153495 ] } },
+{ "type": "Feature", "properties": { "Name": "Nonsan", "Name_1": "No. 6", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 35.953846, "Lon": 127.209639 }, "geometry": { "type": "Point", "coordinates": [ 127.209639, 35.953846 ] } },
+{ "type": "Feature", "properties": { "Name": "Masan", "Name_1": "No. 7", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 35.224877, "Lon": 128.48851 }, "geometry": { "type": "Point", "coordinates": [ 128.48851, 35.224877 ] } },
+{ "type": "Feature", "properties": { "Name": "Cheju City", "Name_1": "No. 8", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 33.50449, "Lon": 126.509315 }, "geometry": { "type": "Point", "coordinates": [ 126.509315, 33.50449 ] } },
+{ "type": "Feature", "properties": { "Name": "Pusan", "Name_1": "No. 9", "Country": "South Korea", "Type": "Main EPW Camp", "Lat": 35.445028, "Lon": 129.284537 }, "geometry": { "type": "Point", "coordinates": [ 129.284537, 35.445028 ] } }
+]
+}

@@ -1,0 +1,295 @@
+/* ── Reset ───────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "ff-tisa-web-pro", "Georgia", serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ── Utility bar ─────────────────────────────────────────────── */
+#utility-bar {
+  background: #4f5d75;
+  padding: 7px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#utility-bar a {
+  color: #d4ead9;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: color 0.15s;
+}
+
+#utility-bar a:hover {
+  color: #fff;
+  opacity: 1;
+}
+#utility-bar a.special-link {
+  color: #ef8354;
+  font-weight: bold;
+}
+
+/* ── Navbar ──────────────────────────────────────────────────── */
+#site-nav {
+  background: #000;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+#nav-brand {
+  margin-left: max(0px, calc((100vw - 1200px) / 2 + 60px));
+  transition: margin-left 0.2s ease;
+}
+
+/* Dropdown button */
+#nav-hamburger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #faf9f9;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+
+#nav-hamburger:hover {
+  color: #ef8354;
+}
+
+#nav-hamburger::after {
+  content: "↓";
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+}
+
+#nav-hamburger[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+#nav-menu {
+  position: relative;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 350px;
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 499;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition:
+    max-height 0.35s ease,
+    padding 0.35s ease;
+}
+
+#nav-links.open {
+  max-height: 600px;
+  padding: 8px 0 16px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav-links a {
+  display: block;
+  padding: 10px 24px;
+  font-size: 0.8rem;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500;
+  color: #fcfbfb;
+  text-decoration: none;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: right;
+  transition:
+    color 0.15s,
+    background 0.15s;
+}
+
+#nav-links a:hover {
+  color: #f5f0e8;
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 1;
+}
+#nav-links a.active {
+  color: #ef8354;
+}
+
+/* ── Page body ───────────────────────────────────────────────── */
+#site-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 88px);
+}
+
+#site-content {
+  background: white;
+  min-width: 0;
+}
+
+.footnote-mark {
+  color: #ef8354;
+  font-size: 0.75em;
+  vertical-align: super;
+  font-style: normal;
+  margin-left: 1px;
+}
+
+/* ── Landing page ────────────────────────────────────────────── */
+#landing-intro {
+  max-width: 680px;
+  margin-bottom: 56px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #e0d8cc;
+}
+
+#landing-intro h1 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#landing-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+#chapter-list {
+  max-width: 680px;
+}
+
+.chapter-entry {
+  display: block;
+  padding: 24px 0;
+  border-bottom: 1px solid #e0d8cc;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: opacity 0.15s;
+}
+
+.chapter-entry:first-child {
+  border-top: 1px solid #e0d8cc;
+}
+.chapter-entry:hover {
+  opacity: 0.65;
+}
+
+.chapter-entry .entry-number {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.chapter-entry h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.chapter-entry p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+#site-footer {
+  padding: 16px;
+  font-size: 0.8rem;
+  color: #aaa;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#site-footer a {
+  color: #888;
+  text-decoration: none;
+}
+#site-footer a:hover {
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  #nav-brand {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  #utility-bar {
+    padding: 6px 16px;
+  }
+  #site-nav {
+    padding: 0 16px 0 0;
+  }
+  #nav-brand {
+    margin-left: 16px;
+  }
+
+  #site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+  }
+}
