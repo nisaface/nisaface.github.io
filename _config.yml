@@ -15,4 +15,4 @@ paginate: 8
 paginate_path: "page/:num"
 
 # Gems
-gems: [jekyll-paginate]
+gplugins: [jekyll-paginate]
