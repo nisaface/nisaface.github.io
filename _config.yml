@@ -15,6 +15,4 @@ paginate: 8
 paginate_path: "page/:num"
 
 # Gems
-plugins: [jekyll-paginate]
-
-exclude: [Gemfile, Gemfile.lock, README.md, vendor, node_modules, .jekyll-cache]
+gems: [jekyll-paginate]
