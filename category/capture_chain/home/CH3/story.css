@@ -1,0 +1,781 @@
+/* ── Chapter tokens ──────────────────────────────────────────────
+   --nav-height, --color-accent and --font-serif come from style.css,
+   which must load before this file. */
+:root {
+  --content-padding: 40px;
+  --text-max: 600px;
+  --note-width: 250px;
+  --note-gap: 24px;
+  --color-text: #1a1a1a;
+  --color-slate: #4f5d75;
+  --color-accent-rule: rgba(239, 131, 84, 0.3);
+  --font-display: "neue-haas-grotesk-display", "Helvetica Neue", Arial, sans-serif;
+  --font-text: "neue-haas-grotesk-text", "Helvetica Neue", Arial, sans-serif;
+  --font-jeep: "cheap-pine-sans", Impact, sans-serif;
+  --stage-height: calc(100vh - var(--nav-height));
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --stage-height: calc(100dvh - var(--nav-height));
+  }
+}
+
+/* ── White bars ──────────────────────────────────────────────── */
+#white-bar,
+#white-bar-2 {
+  background: #fff;
+}
+
+/* ── Text sections ───────────────────────────────────────────── */
+#intro,
+#body {
+  padding: 80px var(--content-padding) 0;
+}
+
+#body {
+  padding-bottom: 60px;
+}
+
+#intro h1,
+#body h1,
+.white-interlude h1 {
+  max-width: var(--text-max);
+  margin: 0 auto 0.75em;
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 1.6vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+#intro p,
+#body p,
+.white-interlude p {
+  max-width: var(--text-max);
+  margin: 0 auto 1em;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+#intro .marginal:last-child p {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+/* ── Special text spans ──────────────────────────────────────── */
+.chapter-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-slate);
+}
+
+.first-three {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+/* ── Marginal notes ──────────────────────────────────────────── */
+.marginal {
+  position: relative;
+  max-width: var(--text-max);
+  margin: 0 auto;
+}
+
+.marginal-note {
+  position: absolute;
+  top: 0;
+  left: calc(100% + var(--note-gap));
+  width: var(--note-width);
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.marginal-note.left {
+  left: auto;
+  right: calc(100% + var(--note-gap));
+  text-align: right;
+}
+
+/* Image + note side by side: note sits beside the image, aligned to its bottom */
+.marginal-wide {
+  position: relative;
+}
+
+.marginal-wide .marginal-note {
+  top: auto;
+  bottom: 0;
+  left: 885px;
+}
+
+.marginal-wide .marginal-note.left {
+  left: auto;
+  right: 16px;
+  text-align: left;
+}
+
+/* ── Images ──────────────────────────────────────────────────── */
+.fig {
+  margin: 2em 0;
+}
+
+.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fig-full {
+  margin-left: calc(-1 * var(--content-padding));
+  margin-right: calc(-1 * var(--content-padding));
+}
+
+.fig-left,
+.fig-right {
+  width: 895px;
+  max-width: calc(100% + var(--content-padding));
+}
+
+.fig-left {
+  margin-left: calc(-1 * var(--content-padding));
+  margin-right: auto;
+}
+
+.fig-right {
+  margin-left: auto;
+  margin-right: calc(-1 * var(--content-padding));
+}
+
+.fig-right.fig-sm,
+.fig-right.fig-md {
+  float: right;
+  width: 200px;
+  margin-left: 24px; /* gap between image and text */
+  margin-bottom: 16px;
+}
+
+.fig-right.fig-md {
+  width: 400px;
+}
+
+.fig-center {
+  max-width: var(--text-max);
+  margin: 0 auto;
+}
+
+/* ── Hero fade ───────────────────────────────────────────────── */
+#chapter-hero {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 0;
+  width: 100%;
+  height: var(--stage-height);
+  overflow: hidden;
+}
+
+#chapter-hero img {
+  display: block;
+  width: calc(80% + 500px);
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+#hero-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.7) 70%,
+    #fff 100%
+  );
+}
+
+#white-bar-fade {
+  position: relative;
+  z-index: 1;
+  margin-top: -10vh;
+  background: #fff;
+  box-shadow: 0 -50px 80px 100px #fff;
+}
+
+/* ── Shared sticky stages ────────────────────────────────────── */
+/* JS also sets an inline height on these from visualViewport; this is the fallback. */
+#jeep-stage,
+#paper-stage,
+#sticky-map {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 0;
+  width: 100%;
+  height: var(--stage-height);
+}
+
+#jeep-stage,
+#paper-stage {
+  overflow: hidden;
+}
+
+/* ── Jeep scrolly ────────────────────────────────────────────── */
+#jeep-scrolly {
+  position: relative;
+  width: 100%;
+  background: #000;
+}
+
+#jeep-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#jeep-overlay,
+#jeep-overlay-2,
+#jeep-overlay-3,
+#jeep-overlay-4 {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+#jeep-overlay img,
+#jeep-overlay-2 img,
+#jeep-overlay-3 img,
+#jeep-overlay-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#jeep-steps {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-top: -110vh;
+  margin-top: -110dvh;
+  padding: 0 0 30dvh;
+  pointer-events: none;
+}
+
+#jeep-steps .step {
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#jeep-steps .step-inner {
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  text-align: center;
+}
+
+#jeep-steps .step-inner h2,
+#jeep-steps .step-inner h3,
+#jeep-steps .step-inner p {
+  display: inline;
+  padding: 0.15em 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-family: var(--font-jeep);
+  font-size: 2.2rem;
+  line-height: 1.6;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#jeep-steps .illus-step:first-child {
+  height: var(--stage-height);
+  min-height: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 30%;
+}
+
+/* ── White interlude between scrolly sections ────────────────── */
+.white-interlude {
+  position: relative;
+  z-index: 1;
+  padding: 40px var(--content-padding) 80px;
+  background: #fff;
+}
+
+/* ── Illustration scrolly ────────────────────────────────────── */
+#illustration-scrolly {
+  position: relative;
+  width: 100%;
+}
+
+#paper-texture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("/CH3/images/paper-texture.jpg") center / cover;
+}
+
+#illustration-track {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.illustration-frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.illustration-frame.active {
+  opacity: 1;
+}
+
+.illustration-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* preserve drawing proportions */
+  object-position: center;
+}
+
+/* Text column on the right. Cards fill the column instead of bleeding
+   200px past it, which pushed them off-screen below ~1250px wide. */
+#illustration-steps {
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  margin-left: auto;
+  margin-top: calc(-1 * var(--stage-height));
+  padding: 0 24px 60dvh;
+  pointer-events: none;
+}
+
+#illustration-steps .illus-step {
+  justify-content: center;
+  padding: 40px 0;
+}
+
+#illustration-steps .step-inner {
+  width: 100%;
+  max-width: 560px;
+}
+
+.illus-step {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 32px;
+  pointer-events: none;
+}
+
+.illus-step .step-inner {
+  width: 45%;
+  pointer-events: auto;
+}
+
+.illus-step-png {
+  justify-content: center;
+  padding: 0;
+}
+
+.illus-step-png img {
+  position: sticky;
+  top: var(--nav-height);
+  width: 100%;
+  height: var(--stage-height);
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+/* ── Scrolly map ─────────────────────────────────────────────── */
+#scrolly-wrapper {
+  background: #c5c5c9;
+}
+
+#scrolly {
+  position: relative;
+  width: 100%;
+}
+
+#map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#map-overlay-image,
+#map-overlay-image-2 {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #dfdede;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.overlay-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: var(--font-text);
+  font-size: 11px;
+}
+
+/* ── Scrolly steps ───────────────────────────────────────────── */
+#steps {
+  position: relative;
+  z-index: 10;
+  width: 45%;
+  margin-left: auto;
+  margin-top: -110vh;
+  margin-top: -110dvh;
+  padding: 0 32px 100dvh;
+  pointer-events: none;
+}
+
+.step {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.step-inner {
+  width: 100%;
+  padding: 24px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+}
+
+.step-inner h2 {
+  margin-bottom: 10px;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7e7d7d;
+}
+
+.step-inner h3 {
+  margin-bottom: 10px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #444;
+}
+
+.step-inner p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.step-note {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-accent-rule);
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.step-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* ── Progress dots ───────────────────────────────────────────── */
+#progress {
+  position: fixed;
+  top: 50%;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateY(-50%);
+}
+
+.progress-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.progress-dot.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.progress-dot::before {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-family: var(--font-text);
+  font-size: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.2s;
+}
+
+.progress-dot:hover::before,
+.progress-dot:focus-visible::before {
+  opacity: 1;
+}
+
+/* ── MapLibre overrides ──────────────────────────────────────── */
+.maplibregl-ctrl-attrib {
+  font-size: 9px !important;
+}
+
+.maplibregl-popup-content {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-text);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.maplibregl-popup-tip,
+.maplibregl-popup-close-button {
+  display: none;
+}
+
+.maplibregl-cooperative-gesture-screen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 0 0 60px;
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+.maplibregl-cooperative-gesture-screen p {
+  max-width: 200px !important;
+  padding: 4px 8px !important;
+  background: transparent !important;
+  color: var(--color-accent) !important;
+  font-family: var(--font-serif) !important;
+  font-size: 9px !important;
+}
+
+/* ── Tablet ──────────────────────────────────────────────────── */
+@media (min-width: 901px) and (max-width: 1100px) {
+  #intro,
+  #body {
+    --content-padding: 20px;
+    padding: 60px 20px 40px;
+  }
+
+  #steps {
+    width: 50%;
+    padding: 0 20px 80vh;
+  }
+
+  #jeep-steps .step-inner p {
+    font-size: 2rem;
+  }
+}
+
+/* ── Collapse marginal notes under the text ──────────────────── */
+@media (max-width: 1250px) {
+  .marginal-note,
+  .marginal-wide .marginal-note {
+    position: static;
+    display: block;
+    width: min(var(--text-max), 100%);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-accent-rule);
+  }
+
+  .marginal-wide .marginal-note {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  #intro > .marginal > .marginal-note:only-child {
+    margin-top: -2em;
+  }
+}
+
+/* ── Mobile portrait ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  #intro,
+  #body,
+  .white-interlude {
+    --content-padding: 16px;
+  }
+
+  #intro {
+    padding: 40px 16px 8px;
+  }
+
+  #body {
+    padding: 40px 16px 60px;
+  }
+
+  .white-interlude {
+    padding: 16px 16px 80px;
+  }
+
+  #steps {
+    width: 100%;
+    margin-top: calc(-100dvh + var(--nav-height));
+    padding: 0 16px 80vh;
+  }
+
+  .step {
+    min-height: 180dvh;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+
+  .step-inner {
+    width: clamp(280px, 88%, 600px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  #jeep-steps {
+    padding: 0 0 40dvh;
+  }
+
+  #jeep-steps .step {
+    padding: 40px 0;
+  }
+
+  #jeep-steps .step-inner {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0.375em 12px;
+    box-shadow: none;
+  }
+
+  #jeep-steps .step-inner p {
+    font-size: 1.5rem;
+  }
+
+  .fig-left,
+  .fig-right,
+  .fig-center {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .white-interlude .fig-left {
+    width: calc(100% + 2 * var(--content-padding));
+    max-width: none;
+    margin-left: calc(-1 * var(--content-padding));
+    margin-right: calc(-1 * var(--content-padding));
+  }
+
+  .marginal-wide .marginal-note {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #progress {
+    display: none;
+  }
+
+  #illustration-steps {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 16px 60dvh;
+  }
+
+  #illustration-steps .illus-step {
+    justify-content: center;
+    min-height: 130vh;
+    padding: 40px 0;
+  }
+
+  #illustration-steps .step-inner {
+    width: clamp(280px, 88%, 600px);
+  }
+}
+
+/* ── Mobile landscape ────────────────────────────────────────── */
+@media (max-width: 900px) and (orientation: landscape) {
+  #steps {
+    width: 50%;
+    margin-top: calc(-100vh + 52px);
+    margin-left: auto;
+    padding: 0 16px 80vh;
+  }
+
+  .step {
+    min-height: 110vh;
+    padding: 20px 0;
+  }
+
+  .step-inner {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  #progress {
+    display: flex;
+  }
+}

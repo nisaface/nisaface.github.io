@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "epw-populations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Koje-do", "Name_1": "No. 1", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 47597, "Lat": 34.964094, "Lon": 128.603076 }, "geometry": { "type": "Point", "coordinates": [ 128.603076, 34.964094 ] } },
+{ "type": "Feature", "properties": { "Name": "Chogu-ri", "Name_1": "No. 1a", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Population": 11597, "Lat": 34.812871, "Lon": 128.664412 }, "geometry": { "type": "Point", "coordinates": [ 128.664412, 34.812871 ] } },
+{ "type": "Feature", "properties": { "Name": "Yoncho-do", "Name_1": "No. 1b", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Population": 8013, "Lat": 34.727924, "Lon": 128.461377 }, "geometry": { "type": "Point", "coordinates": [ 128.461377, 34.727924 ] } },
+{ "type": "Feature", "properties": { "Name": "Pongam-do", "Name_1": "No. 1c", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Population": 9105, "Lat": 34.64799, "Lon": 128.354616 }, "geometry": { "type": "Point", "coordinates": [ 128.354616, 34.64799 ] } },
+{ "type": "Feature", "properties": { "Name": "Pusan Hospital", "Name_1": "No. 2", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 2619, "Lat": 35.215068, "Lon": 129.096736 }, "geometry": { "type": "Point", "coordinates": [ 129.096736, 35.215068 ] } },
+{ "type": "Feature", "properties": { "Name": "Mosulp'o", "Name_1": "No. 3", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 14298, "Lat": 33.265727, "Lon": 126.338963 }, "geometry": { "type": "Point", "coordinates": [ 126.338963, 33.265727 ] } },
+{ "type": "Feature", "properties": { "Name": "Yongchun", "Name_1": "No. 4", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 528, "Lat": 36.043055, "Lon": 128.927544 }, "geometry": { "type": "Point", "coordinates": [ 128.927544, 36.043055 ] } },
+{ "type": "Feature", "properties": { "Name": "Taegu", "Name_1": "No. 4a", "Country": "South Korea", "Type": "Branch EPW Camp", "Capacity": null, "Population": 494, "Lat": 35.773112, "Lon": 128.50656 }, "geometry": { "type": "Point", "coordinates": [ 128.50656, 35.773112 ] } },
+{ "type": "Feature", "properties": { "Name": "Sang Mudai", "Name_1": "No. 5", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 11996, "Lat": 35.153495, "Lon": 126.818845 }, "geometry": { "type": "Point", "coordinates": [ 126.818845, 35.153495 ] } },
+{ "type": "Feature", "properties": { "Name": "Nonsan", "Name_1": "No. 6", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 11910, "Lat": 35.953846, "Lon": 127.209639 }, "geometry": { "type": "Point", "coordinates": [ 127.209639, 35.953846 ] } },
+{ "type": "Feature", "properties": { "Name": "Masan", "Name_1": "No. 7", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 3923, "Lat": 35.224877, "Lon": 128.48851 }, "geometry": { "type": "Point", "coordinates": [ 128.48851, 35.224877 ] } },
+{ "type": "Feature", "properties": { "Name": "Cheju City", "Name_1": "No. 8", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 5911, "Lat": 33.50449, "Lon": 126.509315 }, "geometry": { "type": "Point", "coordinates": [ 126.509315, 33.50449 ] } },
+{ "type": "Feature", "properties": { "Name": "Pusan", "Name_1": "No. 9", "Country": "South Korea", "Type": "Main EPW Camp", "Capacity": null, "Population": 4313, "Lat": 35.445028, "Lon": 129.284537 }, "geometry": { "type": "Point", "coordinates": [ 129.284537, 35.445028 ] } }
+]
+}

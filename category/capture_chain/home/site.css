@@ -1,3 +1,24 @@
+/* ── Tokens ──────────────────────────────────────────────────── */
+:root {
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #444;
+  --color-ink-soft: #666;
+  --color-ink-faint: #aaa;
+  --color-page: #151515;
+  --color-paper: #ffffff;
+  --color-rule: #e0d8cc;
+  --color-accent: #ef8354;
+  --color-slate: #4f5d75;
+  --color-mint: #d4ead9;
+  --color-nav-text: #faf9f9;
+
+  --font-serif: "ff-tisa-web-pro", Georgia, serif;
+  --font-sans: "neue-haas-grotesk-display", "Helvetica Neue", Arial, sans-serif;
+
+  --content-width: 1200px;
+  --nav-height: 75px;
+}
+
 /* ── Reset ───────────────────────────────────────────────────── */
 *,
 *::before,
@@ -9,13 +30,25 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  /* Keeps anchor targets (e.g. footnotes) from hiding under the sticky nav */
+  scroll-padding-top: var(--nav-height);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {
-  font-family: "ff-tisa-web-pro", "Georgia", serif;
-  background: #f5f5f5;
-  color: #1a1a1a;
+  font-family: var(--font-serif);
+  background: var(--color-page);
+  color: var(--color-ink);
   line-height: 1.6;
 }
 
@@ -29,9 +62,14 @@ a:hover {
   opacity: 0.7;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 /* ── Utility bar ─────────────────────────────────────────────── */
 #utility-bar {
-  background: #4f5d75;
+  background: var(--color-slate);
   padding: 7px 32px;
   display: flex;
   align-items: center;
@@ -40,7 +78,7 @@ a:hover {
 }
 
 #utility-bar a {
-  color: #d4ead9;
+  color: var(--color-mint);
   text-decoration: none;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -51,26 +89,28 @@ a:hover {
   color: #fff;
   opacity: 1;
 }
+
 #utility-bar a.special-link {
-  color: #ef8354;
+  color: var(--color-accent);
   font-weight: bold;
 }
 
 /* ── Navbar ──────────────────────────────────────────────────── */
 #site-nav {
-  background: #000;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 75px;
   position: sticky;
   top: 0;
   z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  padding: 0 20px;
+  background: #000;
 }
 
 #nav-brand {
-  margin-left: max(0px, calc((100vw - 1200px) / 2 + 60px));
+  /* Lines the brand up with the content column; 100% avoids the scrollbar offset of 100vw */
+  margin-left: max(16px, calc((100% - var(--content-width)) / 2 + 60px));
   transition: margin-left 0.2s ease;
 }
 
@@ -79,25 +119,26 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 4px 0;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px 0;
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 0.9rem;
-  color: #faf9f9;
+  color: var(--color-nav-text);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: color 0.15s;
 }
 
 #nav-hamburger:hover {
-  color: #ef8354;
+  color: var(--color-accent);
 }
 
 #nav-hamburger::after {
   content: "↓";
+  display: inline-block; /* transforms don't apply to inline boxes */
   font-size: 0.7rem;
   transition: transform 0.2s;
 }
@@ -112,19 +153,21 @@ a:hover {
 }
 
 #nav-links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
   position: absolute;
   top: 100%;
   right: 0;
-  width: 350px;
-  background: rgba(17, 17, 17, 0.75);
-  backdrop-filter: blur(8px);
   z-index: 499;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  max-width: 100vw;
   max-height: 0;
   overflow: hidden;
+  list-style: none;
   padding: 0;
+  background: rgba(17, 17, 17, 0.75);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   transition:
     max-height 0.35s ease,
     padding 0.35s ease;
@@ -141,46 +184,47 @@ a:hover {
 #nav-links a {
   display: block;
   padding: 10px 24px;
-  font-size: 0.8rem;
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
-  color: #fcfbfb;
-  text-decoration: none;
+  font-size: 0.8rem;
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-align: right;
+  text-decoration: none;
+  color: var(--color-nav-text);
   transition:
     color 0.15s,
     background 0.15s;
 }
 
 #nav-links a:hover {
-  color: #f5f0e8;
+  color: #fff;
   background: rgba(255, 255, 255, 0.05);
   opacity: 1;
 }
+
 #nav-links a.active {
-  color: #ef8354;
+  color: var(--color-accent);
 }
 
 /* ── Page body ───────────────────────────────────────────────── */
 #site-body {
-  max-width: 1200px;
+  max-width: var(--content-width);
   margin: 0 auto;
-  min-height: calc(100vh - 88px);
+  min-height: calc(100svh - var(--nav-height));
 }
 
 #site-content {
-  background: white;
   min-width: 0;
+  background: var(--color-paper);
 }
 
 .footnote-mark {
-  color: #ef8354;
-  font-size: 0.75em;
-  vertical-align: super;
-  font-style: normal;
   margin-left: 1px;
+  font-size: 0.75em;
+  font-style: normal;
+  vertical-align: super;
+  color: var(--color-accent);
 }
 
 /* ── Landing page ────────────────────────────────────────────── */
@@ -188,21 +232,21 @@ a:hover {
   max-width: 680px;
   margin-bottom: 56px;
   padding-bottom: 48px;
-  border-bottom: 1px solid #e0d8cc;
+  border-bottom: 1px solid var(--color-rule);
 }
 
 #landing-intro h1 {
+  margin-bottom: 20px;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 20px;
 }
 
 #landing-intro p {
+  margin-bottom: 16px;
   font-size: 1rem;
   line-height: 1.8;
-  color: #444;
-  margin-bottom: 16px;
+  color: var(--color-ink-muted);
 }
 
 #chapter-list {
@@ -212,79 +256,73 @@ a:hover {
 .chapter-entry {
   display: block;
   padding: 24px 0;
-  border-bottom: 1px solid #e0d8cc;
+  border-bottom: 1px solid var(--color-rule);
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--color-ink);
   transition: opacity 0.15s;
 }
 
 .chapter-entry:first-child {
-  border-top: 1px solid #e0d8cc;
+  border-top: 1px solid var(--color-rule);
 }
+
 .chapter-entry:hover {
   opacity: 0.65;
 }
 
 .chapter-entry .entry-number {
+  margin-bottom: 6px;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #aaa;
-  margin-bottom: 6px;
+  color: var(--color-ink-faint);
 }
 
 .chapter-entry h2 {
+  margin-bottom: 6px;
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 6px;
 }
 
 .chapter-entry p {
   font-size: 0.85rem;
   line-height: 1.6;
-  color: #666;
+  color: var(--color-ink-soft);
 }
 
 /* ── Footer ──────────────────────────────────────────────────── */
 #site-footer {
-  padding: 16px;
-  font-size: 0.8rem;
-  color: #aaa;
-  max-width: 1400px;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 0.8rem;
+  color: var(--color-ink-faint);
 }
 
 #site-footer a {
   color: #888;
   text-decoration: none;
 }
+
 #site-footer a:hover {
-  color: #1a1a1a;
+  color: #fff; /* was #1a1a1a, which disappears on the dark page background */
   opacity: 1;
 }
 
 /* ── Responsive ──────────────────────────────────────────────── */
-@media (max-width: 1200px) {
-  #nav-brand {
-    margin-left: 16px;
-  }
-}
-
 @media (max-width: 900px) {
   #utility-bar {
     padding: 6px 16px;
   }
+
   #site-nav {
     padding: 0 16px 0 0;
-  }
-  #nav-brand {
-    margin-left: 16px;
   }
 
   #site-footer {

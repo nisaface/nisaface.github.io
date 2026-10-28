@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"name": "japanese-colonial-prisons",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Seoul / Gyeongseong / Seodaemun ", "Lat": 37.566535, "Lon": 126.9779692, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 126.9779692, 37.566535 ] } },
+{ "type": "Feature", "properties": { "Name": "Yeongdeungpo", "Lat": 37.5263715, "Lon": 126.8962283, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 126.8962283, 37.5263715 ] } },
+{ "type": "Feature", "properties": { "Name": "Gongju", "Lat": 36.4465346, "Lon": 127.1191534, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 127.1191534, 36.4465346 ] } },
+{ "type": "Feature", "properties": { "Name": "Hamheung", "Lat": 39.9838002, "Lon": 127.6124552, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 127.6124552, 39.9838002 ] } },
+{ "type": "Feature", "properties": { "Name": "Pyeongyang", "Lat": 39.0392193, "Lon": 125.7625241, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 125.7625241, 39.0392193 ] } },
+{ "type": "Feature", "properties": { "Name": "Haeju", "Lat": 38.0375021, "Lon": 125.7079231, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 125.7079231, 38.0375021 ] } },
+{ "type": "Feature", "properties": { "Name": "Daegu", "Lat": 35.8714354, "Lon": 128.601445, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 128.601445, 35.8714354 ] } },
+{ "type": "Feature", "properties": { "Name": "Busan", "Lat": 35.1795543, "Lon": 129.0756416, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 129.075641600000012, 35.1795543 ] } },
+{ "type": "Feature", "properties": { "Name": "Gwangju", "Lat": 35.1595454, "Lon": 126.8526012, "Type": "Main Colonial Facility" }, "geometry": { "type": "Point", "coordinates": [ 126.8526012, 35.1595454 ] } },
+{ "type": "Feature", "properties": { "Name": "Chuncheon", "Lat": 37.8813153, "Lon": 127.7299707, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 127.7299707, 37.8813153 ] } },
+{ "type": "Feature", "properties": { "Name": "Cheongju", "Lat": 36.6424341, "Lon": 127.4890319, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 127.4890319, 36.6424341 ] } },
+{ "type": "Feature", "properties": { "Name": "Wonsan", "Lat": 39.1538529, "Lon": 127.4460001, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 127.4460001, 39.1538529 ] } },
+{ "type": "Feature", "properties": { "Name": "Cheongjin", "Lat": 41.7669671, "Lon": 129.723402, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 129.723402, 41.7669671 ] } },
+{ "type": "Feature", "properties": { "Name": "Sinuiju", "Lat": 40.0823213, "Lon": 124.4489192, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 124.4489192, 40.0823213 ] } },
+{ "type": "Feature", "properties": { "Name": "Jinju", "Lat": 35.1799817, "Lon": 128.1076213, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 128.1076213, 35.1799817 ] } },
+{ "type": "Feature", "properties": { "Name": "Jeonju", "Lat": 35.8242238, "Lon": 127.1479532, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 127.1479532, 35.8242238 ] } },
+{ "type": "Feature", "properties": { "Name": "Mokpo", "Lat": 34.8118351, "Lon": 126.3921664, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 126.3921664, 34.8118351 ] } },
+{ "type": "Feature", "properties": { "Name": "Incheon", "Lat": 37.49198, "Lon": 126.62778, "Type": "Branch Colonial Prison" }, "geometry": { "type": "Point", "coordinates": [ 126.638885487905497, 37.477491601764513 ] } }
+]
+}
